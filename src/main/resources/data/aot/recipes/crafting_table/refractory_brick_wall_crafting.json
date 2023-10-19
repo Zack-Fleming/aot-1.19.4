@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "aot:refractory_bricks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "item": "aot:refractory_brick_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

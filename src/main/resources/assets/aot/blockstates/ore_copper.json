@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "aot:block/ore_copper" }
+    }
+}

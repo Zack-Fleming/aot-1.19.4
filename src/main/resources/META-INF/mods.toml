@@ -1,0 +1,43 @@
+modLoader="javafml" # name of the utalized modloader, javafml for @Mod (mandatory)
+loaderVersion="[45,)" # A version range to match for said mod loader (mandatory)
+license="All rights reserved" #liscense for mod use (mandatory)
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" # A URL to refer people to when problems occur with this mod (optional)
+[[mods]] # A list of mods - how many allowed here is determined by the individual mod loader (mandatory)
+modId="aot" # The modid of the mod (mandatory)
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+# ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
+# see the associated build.gradle script for how to populate this completely automatically during a build
+version="${file.jarVersion}" #mandatory
+displayName="Age of Technology" # A display name for the mod (mandatory)
+# A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+logoFile="examplemod.png" # display logo (optional)
+credits="Thanks to all of the resources that help support mod development." # A text field displayed in the mod UI(optional)
+authors="Lightning Flash" # A text field displayed in the mod UI (optional)
+# Display Test controls the display for your mod in the server connection screen
+# MATCH_VERSION means that your mod will cause a red X if the versions on client and server differ. This is the default behaviour and should be what you choose if you have server and client elements to your mod.
+# IGNORE_SERVER_VERSION means that your mod will not cause a red X if it's present on the server but not on the client. This is what you should use if you're a server only mod.
+# IGNORE_ALL_VERSION means that your mod will not cause a red X if it's present on the client or the server. This is a special case and should only be used if your mod has no server component.
+# NONE means that no display test is set on your mod. You need to do this yourself, see IExtensionPoint.DisplayTest for more information. You can define any scheme you wish with this value.
+# IMPORTANT NOTE: this is NOT an instruction as to which environments (CLIENT or DEDICATED SERVER) your mod loads on. Your mod should load (and maybe do nothing!) whereever it finds itself.
+#displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+This mod adds the general progression of technology, throughout human history. Technology from the paleolithic (stone) age, through the many industrial revolutions, and all the way to the future.
+'''
+
+[[dependencies.examplemod]] # optional
+    modId="forge" # the modid of the dependency (mandatory)
+    mandatory=true # is the dependacy required to exist (mandatory)
+    versionRange="[45,)" # The version range of the dependency (mandatory)
+    ordering="NONE" # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    side="BOTH"# Side this dependency is applied on - BOTH, CLIENT or SERVER
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4,1.20)" # can be a range as such
+    ordering="NONE"
+    side="BOTH"

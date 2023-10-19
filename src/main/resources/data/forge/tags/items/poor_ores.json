@@ -1,0 +1,24 @@
+{
+   "replace": false,
+   "values": [
+       "#forge:poor_ores/aluminum",
+       "#forge:poor_ores/beryllium",
+       "#forge:poor_ores/boron",
+       "#forge:poor_ores/cobalt",
+       "#forge:poor_ores/copper",
+       "#forge:poor_ores/gold",
+       "#forge:poor_ores/iron",
+       "#forge:poor_ores/lead",
+       "#forge:poor_ores/lithium",
+       "#forge:poor_ores/nickel",
+       "#forge:poor_ores/phosphorus",
+       "#forge:poor_ores/silver",
+       "#forge:poor_ores/sulfur",
+       "#forge:poor_ores/tin",
+       "#forge:poor_ores/thorium",
+       "#forge:poor_ores/tungsten",
+       "#forge:poor_ores/uranium",
+       "#forge:poor_ores/zinc",
+       "#forge:poor_ores/zirconium"
+   ]
+}

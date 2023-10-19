@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "aot:block/raw_lithium_block" }
+  }
+}

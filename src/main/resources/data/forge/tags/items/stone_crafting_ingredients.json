@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:smooth_stone",
+    "minecraft:infested_stone",
+
+    "minecraft:cobblestone",
+    "minecraft:mossy_cobblestone",
+    "minecraft:infested_cobblestone",
+
+    "minecraft:blackstone",
+    "minecraft:polished_blackstone",
+
+    "minecraft:andesite",
+    "minecraft:polished_andesite",
+
+    "minecraft:diorite",
+    "minecraft:polished_diorite",
+
+    "minecraft:granite",
+    "minecraft:polished_granite",
+
+    "aot:limestone"
+  ]
+}

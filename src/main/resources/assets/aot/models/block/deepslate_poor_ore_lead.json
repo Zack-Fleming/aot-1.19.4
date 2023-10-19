@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "aot:block/deepslate_poor_ore_lead"
+  }
+}

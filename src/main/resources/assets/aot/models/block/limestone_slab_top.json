@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "aot:block/limestone",
+    "side": "aot:block/limestone",
+    "top": "aot:block/limestone"
+  }
+}

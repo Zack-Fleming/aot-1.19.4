@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "S": {
+      "item": "minecraft:sand"
+    },
+    "G": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "pattern": [
+    "CS",
+    "GS"
+  ],
+  "result": {
+    "count": 3,
+    "item": "aot:refractory_cement"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "aot:block/marble_bricks",
+    "side": "aot:block/marble_bricks",
+    "top": "aot:block/marble_bricks"
+  }
+}

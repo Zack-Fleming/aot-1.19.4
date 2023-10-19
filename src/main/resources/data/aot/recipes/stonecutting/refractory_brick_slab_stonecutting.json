@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "aot:refractory_bricks"
+  },
+  "result": "aot:refractory_brick_slab"
+}

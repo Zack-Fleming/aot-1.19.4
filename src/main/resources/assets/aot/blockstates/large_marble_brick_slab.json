@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aot:block/large_marble_brick_slab"
+    },
+    "type=double": {
+      "model": "aot:block/large_marble_bricks"
+    },
+    "type=top": {
+      "model": "aot:block/large_marble_brick_slab_top"
+    }
+  }
+}

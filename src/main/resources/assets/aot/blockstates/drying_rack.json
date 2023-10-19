@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "aot:drying_rack", "uvlock": true }
+    }
+}
