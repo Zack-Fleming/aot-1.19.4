@@ -355,6 +355,11 @@ public class BlockInit
             register("raw_zirconium_block", () -> new ToolTipBlock(RAW_BLOCKS, ChatFormatting.DARK_AQUA + "Raw Zirconium Block"), ITEM_PROPS);
 
 
+    // misc. resource blocks
+    public static final RegistryObject<Block> BLOCK_SLAG =
+            register("block_slag", () -> new Block(RAW_BLOCKS), ITEM_PROPS);
+
+
     // misc. machine blocks
     public static final RegistryObject<Block> REFRACTORY_BRICKS =
             register("refractory_bricks", () -> new Block(STONE_TYPE), ITEM_PROPS);

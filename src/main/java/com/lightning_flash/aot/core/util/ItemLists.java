@@ -89,6 +89,6 @@ public class ItemLists
     public static List<RegistryObject<?>> MISC_COMPONENTS = new ArrayList<>(Arrays.asList(
             ItemInit.SHARD_STONE,       ItemInit.SHARD_BONE,            ItemInit.LEATHER_TANNED,
             ItemInit.PLANT_FIBER,       ItemInit.MESH_PLANT_FIBER,      ItemInit.MESH_STRING,
-            ItemInit.REFRACTORY_CEMENT, ItemInit.REFRACTORY_BRICK
+            ItemInit.REFRACTORY_CEMENT, ItemInit.REFRACTORY_BRICK,      ItemInit.SLAG
     ));
 }

@@ -201,6 +201,9 @@ public class ItemInit
     public static final RegistryObject<Item> SMALL_DUST_ZIRCONIUM = MOD_ITEMS.register("small_dust_zirconium", () -> new Item(PROPERTIES));
 
 
+    public static final RegistryObject<Item> SLAG = MOD_ITEMS.register("slag", () -> new Item(PROPERTIES));
+
+
     /* STONE AGE UPDATE ITEMS */
     public static final RegistryObject<Item> SHARD_STONE = MOD_ITEMS.register("shard_stone", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> SHARD_BONE = MOD_ITEMS.register("shard_bone", () -> new Item(PROPERTIES));

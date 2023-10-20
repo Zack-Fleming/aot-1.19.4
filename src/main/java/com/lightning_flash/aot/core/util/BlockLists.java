@@ -118,6 +118,7 @@ public class BlockLists
     ));
 
     public static List<RegistryObject<?>> MISC_RESOURCE_BLOCKS = new ArrayList<>(Arrays.asList(
+            BlockInit.BLOCK_SLAG,
             BlockInit.REFRACTORY_BRICKS,
             BlockInit.LIMESTONE,
             BlockInit.MARBLE
