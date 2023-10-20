@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot_cast_iron",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:block_cast_iron"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:ingot_cast_iron"
+  }
+}

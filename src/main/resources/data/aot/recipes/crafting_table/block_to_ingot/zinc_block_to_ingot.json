@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot_zinc",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:block_zinc"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:ingot_zinc"
+  }
+}

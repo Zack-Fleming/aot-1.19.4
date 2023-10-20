@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot_silver",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:block_silver"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:ingot_silver"
+  }
+}

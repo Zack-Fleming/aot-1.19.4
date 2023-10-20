@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dust_sulfur",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:block_sulfur"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:dust_sulfur"
+  }
+}

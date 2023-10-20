@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "coal_coke",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:block_coal_coke"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:coal_coke"
+  }
+}

@@ -1,6 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "block_sulfur",
+  "show_notification": true,
   "key": {
     "I": {
       "item": "aot:dust_sulfur"
@@ -16,6 +18,5 @@
   ],
   "result": {
     "item": "aot:block_sulfur"
-  },
-  "show_notification": true
+  }
 }

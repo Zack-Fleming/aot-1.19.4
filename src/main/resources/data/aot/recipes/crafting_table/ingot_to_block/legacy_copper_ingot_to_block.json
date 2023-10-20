@@ -1,12 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "block_copper",
+  "show_notification": true,
   "key": {
     "I": {
-      "item": "aot:ingot_cobalt"
+      "item": "aot:ingot_copper"
     },
     "T": {
-      "tag": "forge:ingots/cobalt"
+      "tag": "forge:ingots/copper"
     }
   },
   "pattern": [
@@ -15,7 +17,6 @@
     "TTT"
   ],
   "result": {
-    "item": "aot:block_cobalt"
-  },
-  "show_notification": true
+    "item": "aot:block_copper"
+  }
 }

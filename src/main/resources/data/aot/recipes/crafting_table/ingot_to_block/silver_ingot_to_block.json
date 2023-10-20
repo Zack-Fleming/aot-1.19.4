@@ -1,6 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "block_silver",
+  "show_notification": true,
   "key": {
     "I": {
       "item": "aot:ingot_silver"
@@ -16,6 +18,5 @@
   ],
   "result": {
     "item": "aot:block_silver"
-  },
-  "show_notification": true
+  }
 }

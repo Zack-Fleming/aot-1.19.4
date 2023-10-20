@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ingot_copper",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:block_copper"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:ingot_copper"
+  }
+}

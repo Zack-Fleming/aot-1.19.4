@@ -1,6 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "block_coal_coke",
+  "show_notification": true,
   "key": {
     "I": {
       "item": "aot:coal_coke"
@@ -16,6 +18,5 @@
   ],
   "result": {
     "item": "aot:block_coal_coke"
-  },
-  "show_notification": true
+  }
 }

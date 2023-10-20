@@ -1,6 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "block_boron",
+  "show_notification": true,
   "key": {
     "I": {
       "item": "aot:ingot_boron"
@@ -16,6 +18,5 @@
   ],
   "result": {
     "item": "aot:block_boron"
-  },
-  "show_notification": true
+  }
 }
