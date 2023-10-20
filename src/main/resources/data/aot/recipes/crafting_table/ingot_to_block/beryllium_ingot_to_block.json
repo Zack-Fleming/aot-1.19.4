@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_beryllium"
+    },
+    "T": {
+      "tag": "forge:ingots/beryllium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_beryllium"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:dust_sulfur"
+    },
+    "T": {
+      "tag": "forge:dusts/sulfur"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_sulfur"
+  },
+  "show_notification": true
+}

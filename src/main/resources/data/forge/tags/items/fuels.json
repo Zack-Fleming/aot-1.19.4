@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:fuels/coal_coke",
+    "#forge:fuels/block_coal_coke"
+  ]
+}

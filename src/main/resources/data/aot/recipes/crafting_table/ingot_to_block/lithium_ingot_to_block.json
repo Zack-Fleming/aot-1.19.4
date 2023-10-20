@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_lithium"
+    },
+    "T": {
+      "tag": "forge:ingots/lithium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_lithium"
+  },
+  "show_notification": true
+}

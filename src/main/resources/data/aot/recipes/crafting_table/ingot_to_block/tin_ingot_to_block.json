@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_tin"
+    },
+    "T": {
+      "tag": "forge:ingots/tin"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_tin"
+  },
+  "show_notification": true
+}

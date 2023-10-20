@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_zirconium"
+    },
+    "T": {
+      "tag": "forge:ingots/zirconium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_zirconium"
+  },
+  "show_notification": true
+}

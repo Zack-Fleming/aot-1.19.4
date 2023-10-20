@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_tungsten_carbide"
+    },
+    "T": {
+      "tag": "forge:ingots/tungsten_carbide"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_tungsten_carbide"
+  },
+  "show_notification": true
+}

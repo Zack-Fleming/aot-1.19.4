@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_cast_iron"
+    },
+    "T": {
+      "tag": "forge:ingots/cast_iron"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_cast_iron"
+  },
+  "show_notification": true
+}

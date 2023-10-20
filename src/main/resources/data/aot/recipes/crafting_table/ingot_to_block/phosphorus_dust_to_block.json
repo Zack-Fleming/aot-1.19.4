@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:dust_phosphorus"
+    },
+    "T": {
+      "tag": "forge:dusts/phosphorus"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_phosphorus"
+  },
+  "show_notification": true
+}

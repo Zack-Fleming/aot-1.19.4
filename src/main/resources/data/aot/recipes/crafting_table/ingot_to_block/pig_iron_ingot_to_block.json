@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "aot:ingot_pig_iron"
+    },
+    "T": {
+      "tag": "forge:ingots/pig_iron"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:block_pig_iron"
+  },
+  "show_notification": true
+}
