@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "aot:limestone_wall",
+
+    "aot:marble_wall",
+    "aot:polished_marble_wall",
+    "aot:marble_brick_wall",
+    "aot:large_marble_brick_wall",
+    "aot:refractory_brick_wall"
+  ]
+}

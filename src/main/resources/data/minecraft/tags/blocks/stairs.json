@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "aot:limestone_stairs",
+
+    "aot:marble_stairs",
+    "aot:polished_marble_stairs",
+    "aot:marble_brick_stairs",
+    "aot:large_marble_brick_stairs",
+    "aot:refractory_brick_stairs"
+  ]
+}
