@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "aot:limestone",	
-    
     "aot:poor_ore_aluminum",
     "aot:poor_ore_beryllium",
     "aot:poor_ore_boron",
@@ -112,6 +110,8 @@
     "aot:block_zinc",
     "aot:block_zirconium",
 
+    "aot:block_slag",
+
     "aot:raw_aluminum_block",
     "aot:raw_beryllium_block",
     "aot:raw_boron_block",
@@ -127,6 +127,39 @@
     "aot:raw_tungsten_block",
     "aot:raw_uranium_block",
     "aot:raw_zinc_block",
-    "aot:raw_zirconium_block"
+    "aot:raw_zirconium_block",
+
+    "aot:limestone",
+    "aot:limestone_stairs",
+    "aot:limestone_slab",
+    "aot:limestone_wall",
+
+    "aot:marble",
+    "aot:marble_stairs",
+    "aot:marble_slab",
+    "aot:marble_wall",
+
+    "aot:marble_bricks",
+    "aot:marble_brick_stairs",
+    "aot:marble_brick_slab",
+    "aot:marble_brick_wall",
+
+    "aot:large_marble_bricks",
+    "aot:large_marble_brick_stairs",
+    "aot:large_marble_brick_slab",
+    "aot:large_marble_brick_wall",
+
+    "aot:polished_marble",
+    "aot:polished_marble_stairs",
+    "aot:polished_marble_slab",
+    "aot:polished_marble_wall",
+
+    "aot:marble_pillar",
+    "aot:gilded_marble_pillar",
+
+    "aot:refractory_bricks",
+    "aot:refractory_brick_stairs",
+    "aot:refractory_brick_slab",
+    "aot:refractory_brick_wall"
   ]
 }
