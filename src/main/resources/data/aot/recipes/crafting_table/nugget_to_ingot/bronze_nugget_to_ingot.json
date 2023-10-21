@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_bronze",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_bronze"
+    },
+    "T": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_bronze"
+  }
+}

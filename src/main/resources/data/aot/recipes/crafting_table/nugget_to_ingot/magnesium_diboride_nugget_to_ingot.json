@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_magnesium_diboride",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_magnesium_diboride"
+    },
+    "T": {
+      "tag": "forge:nuggets/magnesium_diboride"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_magnesium_diboride"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_silicon",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_silicon"
+    },
+    "T": {
+      "tag": "forge:nuggets/silicon"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_silicon"
+  }
+}

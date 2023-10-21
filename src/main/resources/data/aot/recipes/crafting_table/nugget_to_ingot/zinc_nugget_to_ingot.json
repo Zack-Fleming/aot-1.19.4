@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_zinc",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_zinc"
+    },
+    "T": {
+      "tag": "forge:nuggets/zinc"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_zinc"
+  }
+}

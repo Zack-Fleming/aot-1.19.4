@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_lead",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_lead"
+    },
+    "T": {
+      "tag": "forge:nuggets/lead"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_lead"
+  }
+}

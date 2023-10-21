@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_silver",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_silver"
+    },
+    "T": {
+      "tag": "forge:nuggets/silver"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_silver"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_tungsten_carbide",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_tungsten_carbide"
+    },
+    "T": {
+      "tag": "forge:nuggets/tungsten_carbide"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_tungsten_carbide"
+  }
+}

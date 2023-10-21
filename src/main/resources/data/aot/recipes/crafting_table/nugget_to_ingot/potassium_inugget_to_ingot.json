@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_potassium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_potassium"
+    },
+    "T": {
+      "tag": "forge:nuggets/potassium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_potassium"
+  }
+}

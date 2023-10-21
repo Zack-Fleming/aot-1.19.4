@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_tin",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_tin"
+    },
+    "T": {
+      "tag": "forge:nuggets/tin"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_tin"
+  }
+}

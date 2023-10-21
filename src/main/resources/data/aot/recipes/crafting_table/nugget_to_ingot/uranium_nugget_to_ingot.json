@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_uranium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_uranium"
+    },
+    "T": {
+      "tag": "forge:nuggets/uranium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_uranium"
+  }
+}

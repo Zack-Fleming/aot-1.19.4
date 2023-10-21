@@ -31,7 +31,7 @@ public class ItemLists
             ItemInit.RAW_NICKEL,      ItemInit.RAW_PHOSPHORUS,  ItemInit.RAW_SILVER,
             ItemInit.RAW_SULFUR,      ItemInit.RAW_THORIUM,     ItemInit.RAW_TIN,
             ItemInit.RAW_TUNGSTEN,    ItemInit.RAW_URANIUM,     ItemInit.RAW_ZINC,
-            ItemInit.RAW_ZIRCONIUM
+            ItemInit.RAW_ZIRCONIUM,   ItemInit.RAW_RUBBER
     ));
     public static List<RegistryObject<?>> INGOTS = new ArrayList<>(Arrays.asList(
             ItemInit.INGOT_ALUMINUM,    ItemInit.INGOT_AMERICIUM,           ItemInit.INGOT_BERYLLIUM,

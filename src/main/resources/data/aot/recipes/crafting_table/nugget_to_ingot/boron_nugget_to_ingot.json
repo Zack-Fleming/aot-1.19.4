@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_boron",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_boron"
+    },
+    "T": {
+      "tag": "forge:nuggets/boron"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_boron"
+  }
+}

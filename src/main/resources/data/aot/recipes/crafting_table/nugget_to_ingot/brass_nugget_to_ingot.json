@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_brass",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_brass"
+    },
+    "T": {
+      "tag": "forge:nuggets/brass"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_brass"
+  }
+}

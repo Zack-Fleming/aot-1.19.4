@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ingot_thorium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:nugget_thorium"
+    },
+    "T": {
+      "tag": "forge:nuggets/thorium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:ingot_thorium"
+  }
+}
