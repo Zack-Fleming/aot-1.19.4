@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "small_dust_potassium",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:dust_potassium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:small_dust_potassium"
+  }
+}
