@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:raw_blocks/aluminum",
+    "#forge:raw_blocks/beryllium",
+    "#forge:raw_blocks/boron",
+    "#forge:raw_blocks/cobalt",
+    "#forge:raw_blocks/lead",
+    "#forge:raw_blocks/lithium",
+    "#forge:raw_blocks/nickel",
+    "#forge:raw_blocks/silver",
+    "#forge:raw_blocks/tin",
+    "#forge:raw_blocks/thorium",
+    "#forge:raw_blocks/tungsten",
+    "#forge:raw_blocks/uranium",
+    "#forge:raw_blocks/zinc",
+    "#forge:raw_blocks/zirconium"
+  ]
+}

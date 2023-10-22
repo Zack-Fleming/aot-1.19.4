@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:small_raw_ores/aluminum",
+    "#forge:small_raw_ores/beryllium",
+    "#forge:small_raw_ores/boron",
+    "#forge:small_raw_ores/cobalt",
+    "#forge:small_raw_ores/copper",
+    "#forge:small_raw_ores/gold",
+    "#forge:small_raw_ores/iron",
+    "#forge:small_raw_ores/lead",
+    "#forge:small_raw_ores/lithium",
+    "#forge:small_raw_ores/nickel",
+    "#forge:small_raw_ores/silver",
+    "#forge:small_raw_ores/tin",
+    "#forge:small_raw_ores/thorium",
+    "#forge:small_raw_ores/tungsten",
+    "#forge:small_raw_ores/uranium",
+    "#forge:small_raw_ores/zinc",
+    "#forge:small_raw_ores/zirconium"
+  ]
+}

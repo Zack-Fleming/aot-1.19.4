@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:raw_ores/aluminum",
+    "#forge:raw_ores/beryllium",
+    "#forge:raw_ores/boron",
+    "#forge:raw_ores/cobalt",
+    "#forge:raw_ores/lead",
+    "#forge:raw_ores/lithium",
+    "#forge:raw_ores/nickel",
+    "#forge:raw_ores/silver",
+    "#forge:raw_ores/tin",
+    "#forge:raw_ores/thorium",
+    "#forge:raw_ores/tungsten",
+    "#forge:raw_ores/uranium",
+    "#forge:raw_ores/zinc",
+    "#forge:raw_ores/zirconium"
+  ]
+}
