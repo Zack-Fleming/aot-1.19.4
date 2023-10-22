@@ -173,25 +173,6 @@
 	"item.aot.small_raw_zirconium": "Raw Baddeleyite Chunk",
 
 
-	"item.aot.crushed_ore_aluminum": "Crushed Bauxite Ore",
-	"item.aot.crushed_ore_beryllium": "Crushed Bertrandite Ore",
-	"item.aot.crushed_ore_boron": "Crushed Rasorite Ore",
-	"item.aot.crushed_ore_cobalt": "Crushed Erythrite",
-	"item.aot.crushed_ore_copper": "Crushed Malachite Ore",
-	"item.aot.crushed_ore_gold": "Crushed Gold Ore",
-	"item.aot.crushed_ore_iron": "Crushed Iron Ore",
-	"item.aot.crushed_ore_lead": "Crushed Galena Ore",
-	"item.aot.crushed_ore_lithium": "Crushed Petalite Ore",
-	"item.aot.crushed_ore_nickel": "Crushed Garnierite Ore",
-	"item.aot.crushed_ore_silver": "Crushed Acanthite Ore",
-	"item.aot.crushed_ore_tin": "Crushed Cassiterite Ore",
-	"item.aot.crushed_ore_thorium": "Crushed Thorianite Ore",
-	"item.aot.crushed_ore_tungsten": "Crushed Wolframite Ore",
-	"item.aot.crushed_ore_uranium": "Crushed Carnotite Ore",
-	"item.aot.crushed_ore_zinc": "Crushed Sphalerite Ore",
-	"item.aot.crushed_ore_zirconium": "Crushed Baddeleyite Ore",
-
-
 	"block.aot.block_aluminum": "Aluminum Block",
 	"block.aot.block_americium": "Americium Block",
 	"block.aot.block_beryllium": "Beryllium Block",
@@ -237,7 +218,7 @@
 	"item.aot.ingot_cast_iron": "Cast Iron Ingot",
 	"item.aot.ingot_cobalt": "Cobalt Ingot",
 	"item.aot.coal_coke": "Coal Coke",
-	"item.aot.ingot_copper": "Copper Ingot",
+	"item.aot.ingot_copper": "Copper Ingot (Legacy)",
 	"item.aot.ingot_graphite": "Graphite Ingot",
 	"item.aot.ingot_lead": "Lead Ingot",
 	"item.aot.ingot_lithium": "Lithium Ingot",
@@ -308,7 +289,7 @@
 	"item.aot.nugget_bronze": "Bronze Nugget",
 	"item.aot.nugget_cast_iron": "Cast Iron Nugget",
 	"item.aot.nugget_cobalt": "Cobalt Nugget",
-	"item.aot.nugget_copper": "Copper Nugget",
+	"item.aot.nugget_copper": "Copper Nugget (Legacy)",
 	"item.aot.nugget_graphite": "Graphite Nugget",
 	"item.aot.nugget_lead": "Lead Nugget",
 	"item.aot.nugget_lithium": "Lithium Nugget",
@@ -370,6 +351,7 @@
 
 	"item.aot.slag": "Slag",
 	"block.aot.block_slag": "Block of slag",
+
 
 	"item.aot.shard_bone": "Bone Shard",
 	"item.aot.shard_stone": "Stone Shard",

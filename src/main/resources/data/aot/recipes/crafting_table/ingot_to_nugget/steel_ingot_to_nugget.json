@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nugget_steel",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:ingot_steel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:nugget_steel"
+  }
+}
