@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_tin",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_tin"
+    },
+    "T": {
+      "tag": "forge:small_dusts/tin"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_tin"
+  }
+}

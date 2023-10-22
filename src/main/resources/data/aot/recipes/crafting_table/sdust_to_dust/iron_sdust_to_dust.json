@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_iron",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_iron"
+    },
+    "T": {
+      "tag": "forge:small_dusts/iron"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_iron"
+  }
+}

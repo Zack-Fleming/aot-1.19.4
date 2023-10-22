@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_lithium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_lithium"
+    },
+    "T": {
+      "tag": "forge:small_dusts/lithium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_lithium"
+  }
+}

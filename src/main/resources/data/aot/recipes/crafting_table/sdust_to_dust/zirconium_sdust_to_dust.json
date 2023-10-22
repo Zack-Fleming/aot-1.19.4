@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_zirconium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_zirconium"
+    },
+    "T": {
+      "tag": "forge:small_dusts/zirconium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_zirconium"
+  }
+}

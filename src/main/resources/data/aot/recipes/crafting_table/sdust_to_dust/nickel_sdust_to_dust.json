@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_nickel",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_nickel"
+    },
+    "T": {
+      "tag": "forge:small_dusts/nickel"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_nickel"
+  }
+}

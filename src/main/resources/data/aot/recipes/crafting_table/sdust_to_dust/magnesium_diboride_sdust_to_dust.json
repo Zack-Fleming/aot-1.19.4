@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_magnesium_diboride",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_magnesium_diboride"
+    },
+    "T": {
+      "tag": "forge:small_dusts/magnesium_diboride"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_magnesium_diboride"
+  }
+}

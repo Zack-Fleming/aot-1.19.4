@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_copper",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_copper"
+    },
+    "T": {
+      "tag": "forge:small_dusts/copper"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_copper"
+  }
+}

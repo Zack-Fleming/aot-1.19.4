@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_silicon",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_silicon"
+    },
+    "T": {
+      "tag": "forge:small_dusts/silicon"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_silicon"
+  }
+}

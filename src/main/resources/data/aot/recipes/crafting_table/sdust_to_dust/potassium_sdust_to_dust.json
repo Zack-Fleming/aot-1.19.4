@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_potassium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_potassium"
+    },
+    "T": {
+      "tag": "forge:small_dusts/potassium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_potassium"
+  }
+}

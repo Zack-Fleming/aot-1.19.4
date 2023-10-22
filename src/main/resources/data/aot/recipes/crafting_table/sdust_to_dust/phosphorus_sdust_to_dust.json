@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_phosphorus",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_phosphorus"
+    },
+    "T": {
+      "tag": "forge:small_dusts/phosphorus"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_phosphorus"
+  }
+}

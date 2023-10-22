@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "dust_gold",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_dust_gold"
+    },
+    "T": {
+      "tag": "forge:small_dusts/gold"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:dust_gold"
+  }
+}
