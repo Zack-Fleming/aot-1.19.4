@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_nickel",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_raw_nickel"
+    },
+    "T": {
+      "tag": "forge:small_raw_ores/nickel"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_nickel"
+  }
+}

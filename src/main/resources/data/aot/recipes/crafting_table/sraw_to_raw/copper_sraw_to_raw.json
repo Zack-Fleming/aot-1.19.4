@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_copper",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_raw_copper"
+    },
+    "T": {
+      "tag": "forge:small_raw_ores/copper"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "minecraft:raw_copper"
+  }
+}

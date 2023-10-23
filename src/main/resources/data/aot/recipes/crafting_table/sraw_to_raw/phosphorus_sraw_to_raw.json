@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_phosphorus",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_raw_phosphorus"
+    },
+    "T": {
+      "tag": "forge:small_raw_ores/phosphorus"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_phosphorus"
+  }
+}

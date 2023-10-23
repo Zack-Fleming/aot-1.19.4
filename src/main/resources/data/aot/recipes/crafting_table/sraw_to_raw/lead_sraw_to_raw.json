@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_lead",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_raw_lead"
+    },
+    "T": {
+      "tag": "forge:small_raw_ores/lead"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_lead"
+  }
+}

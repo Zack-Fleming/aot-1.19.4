@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_aluminum",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_raw_aluminum"
+    },
+    "T": {
+      "tag": "forge:small_raw_ores/aluminum"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_aluminum"
+  }
+}

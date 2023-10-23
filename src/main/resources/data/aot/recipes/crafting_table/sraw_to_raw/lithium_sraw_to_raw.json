@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "raw_lithium",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:small_raw_lithium"
+    },
+    "T": {
+      "tag": "forge:small_raw_ores/lithium"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_lithium"
+  }
+}
