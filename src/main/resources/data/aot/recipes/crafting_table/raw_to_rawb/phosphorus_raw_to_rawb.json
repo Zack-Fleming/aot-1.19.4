@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "raw_block_phosphorus",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:raw_phosphorus"
+    },
+    "T": {
+      "tag": "forge:raw_ores/phosphorus"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_phosphorus_block"
+  }
+}

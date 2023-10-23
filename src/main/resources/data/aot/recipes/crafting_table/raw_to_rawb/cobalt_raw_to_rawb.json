@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "raw_block_cobalt",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:raw_cobalt"
+    },
+    "T": {
+      "tag": "forge:raw_ores/cobalt"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_cobalt_block"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "raw_block_aluminum",
+  "show_notification": true,
+  "key": {
+    "I": {
+      "item": "aot:raw_aluminum"
+    },
+    "T": {
+      "tag": "forge:raw_ores/aluminum"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TIT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:raw_aluminum_block"
+  }
+}
