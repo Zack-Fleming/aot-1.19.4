@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "small_raw_tungsten",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "aot:raw_tungsten"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "aot:small_raw_tungsten"
+  }
+}
