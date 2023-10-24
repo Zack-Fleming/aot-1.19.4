@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "polished_marble_stairs",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:polished_marble"
+    }
+  },
+  "pattern": [
+    "T  ",
+    "TT ",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:polished_marble_stairs",
+    "count": 4
+  }
+}

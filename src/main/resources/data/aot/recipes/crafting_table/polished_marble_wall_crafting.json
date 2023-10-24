@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "polished_marble_wall",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:polished_marble"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:polished_marble_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "refractory_bricks",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:limestone_slab"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "item": "aot:limestone"
+  }
+}

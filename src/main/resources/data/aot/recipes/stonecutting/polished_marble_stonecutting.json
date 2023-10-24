@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "aot:marble"
+  },
+  "result": "aot:polished_marble",
+  "count": 1
+}

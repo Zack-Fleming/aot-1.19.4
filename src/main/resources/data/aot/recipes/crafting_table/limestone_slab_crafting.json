@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "limestone_slab",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:limestone"
+    }
+  },
+  "pattern": [
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:limestone_slab",
+    "count": 6
+  }
+}

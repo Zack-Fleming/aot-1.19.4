@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "aot:polished_marble"
+  },
+  "result": "aot:polished_marble_wall",
+  "count": 1
+}

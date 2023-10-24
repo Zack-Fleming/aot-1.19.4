@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "large_marble_bricks",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:polished_marble"
+    }
+  },
+  "pattern": [
+    "TT",
+    "TT"
+  ],
+  "result": {
+    "item": "aot:large_marble_bricks",
+    "count": 4
+  }
+}

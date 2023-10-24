@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "marble_slab",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:marble_slab"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "item": "aot:marble"
+  }
+}

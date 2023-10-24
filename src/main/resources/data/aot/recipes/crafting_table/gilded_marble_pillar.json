@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "gilded_marble_pillar",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:marble_pillar"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "G",
+    "T"
+  ],
+  "result": {
+    "item": "aot:gilded_marble_pillar"
+  }
+}

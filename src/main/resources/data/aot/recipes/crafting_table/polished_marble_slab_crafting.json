@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "polished_marble_slab",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:polished_marble"
+    }
+  },
+  "pattern": [
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:polished_marble_slab",
+    "count": 6
+  }
+}

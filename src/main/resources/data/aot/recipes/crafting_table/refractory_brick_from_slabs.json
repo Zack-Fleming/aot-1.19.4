@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "refractory_bricks",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:refractory_brick_slab"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "item": "aot:refractory_bricks"
+  }
+}

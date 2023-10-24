@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "limestone_stairs",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:limestone"
+    }
+  },
+  "pattern": [
+    "T  ",
+    "TT ",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:limestone_stairs",
+    "count": 4
+  }
+}
