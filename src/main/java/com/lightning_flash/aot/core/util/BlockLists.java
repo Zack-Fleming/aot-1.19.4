@@ -89,6 +89,12 @@ public class BlockLists
             BlockInit.LIMESTONE_BRICKS,                 BlockInit.LIMESTONE_BRICK_SLAB,
             BlockInit.LIMESTONE_BRICK_STAIRS,           BlockInit.LIMESTONE_BRICK_WALL,
 
+            BlockInit.LARGE_LIMESTONE_BRICKS,           BlockInit.LARGE_LIMESTONE_BRICK_SLAB,
+            BlockInit.LARGE_LIMESTONE_BRICK_STAIRS,     BlockInit.LARGE_LIMESTONE_BRICK_WALL,
+
+            BlockInit.POLISHED_LIMESTONE,               BlockInit.POLISHED_LIMESTONE_SLAB,
+            BlockInit.POLISHED_LIMESTONE_STAIRS,        BlockInit.POLISHED_LIMESTONE_WALL,
+
             BlockInit.MARBLE,                           BlockInit.MARBLE_SLAB,
             BlockInit.MARBLE_STAIRS,                    BlockInit.MARBLE_WALL,
 

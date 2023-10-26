@@ -63,6 +63,25 @@ public class BlockInit
     public static final RegistryObject<Block> LIMESTONE_BRICK_WALL =
             register("limestone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LIMESTONE_BRICKS.get())));
 
+    public static final RegistryObject<Block> LARGE_LIMESTONE_BRICKS =
+            register("large_limestone_bricks", () -> new Block(STONE_TYPE));
+    public static final RegistryObject<Block> LARGE_LIMESTONE_BRICK_SLAB =
+            register("large_limestone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(LARGE_LIMESTONE_BRICKS.get())));
+    public static final RegistryObject<Block> LARGE_LIMESTONE_BRICK_STAIRS =
+            register("large_limestone_brick_stairs", () -> new StairBlock(LARGE_LIMESTONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(LARGE_LIMESTONE_BRICKS.get())));
+    public static final RegistryObject<Block> LARGE_LIMESTONE_BRICK_WALL =
+            register("large_limestone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LARGE_LIMESTONE_BRICKS.get())));
+
+    public static final RegistryObject<Block> POLISHED_LIMESTONE =
+            register("polished_limestone", () -> new Block(STONE_TYPE));
+    public static final RegistryObject<Block> POLISHED_LIMESTONE_SLAB =
+            register("polished_limestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get())));
+    public static final RegistryObject<Block> POLISHED_LIMESTONE_STAIRS =
+            register("polished_limestone_stairs", () -> new StairBlock(POLISHED_LIMESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get())));
+    public static final RegistryObject<Block> POLISHED_LIMESTONE_WALL =
+            register("polished_limestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get())));
+
+
 
     // marble stuff
     public static final RegistryObject<Block> MARBLE =
