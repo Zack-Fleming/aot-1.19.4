@@ -83,43 +83,40 @@ public class BlockLists
             BlockInit.RAW_ZIRCONIUM_BLOCK
     ));
     public static List<RegistryObject<?>> BUILDING_BLOCKS = new ArrayList<>(Arrays.asList(
-            BlockInit.LIMESTONE,
-            BlockInit.LIMESTONE_SLAB,
-            BlockInit.LIMESTONE_STAIRS,
-            BlockInit.LIMESTONE_WALL,
+            BlockInit.LIMESTONE,                        BlockInit.LIMESTONE_SLAB,
+            BlockInit.LIMESTONE_STAIRS,                 BlockInit.LIMESTONE_WALL,
 
-            BlockInit.MARBLE,
-            BlockInit.MARBLE_SLAB,
-            BlockInit.MARBLE_STAIRS,
-            BlockInit.MARBLE_WALL,
+            BlockInit.LIMESTONE_BRICKS,                 BlockInit.LIMESTONE_BRICK_SLAB,
+            BlockInit.LIMESTONE_BRICK_STAIRS,           BlockInit.LIMESTONE_BRICK_WALL,
 
-            BlockInit.POLISHED_MARBLE,
-            BlockInit.POLISHED_MARBLE_SLAB,
-            BlockInit.POLISHED_MARBLE_STAIRS,
-            BlockInit.POLISHED_MARBLE_WALL,
+            BlockInit.MARBLE,                           BlockInit.MARBLE_SLAB,
+            BlockInit.MARBLE_STAIRS,                    BlockInit.MARBLE_WALL,
 
-            BlockInit.MARBLE_BRICKS,
-            BlockInit.MARBLE_BRICK_SLAB,
-            BlockInit.MARBLE_BRICK_STAIRS,
-            BlockInit.MARBLE_BRICK_WALL,
+            BlockInit.POLISHED_MARBLE,                  BlockInit.POLISHED_MARBLE_SLAB,
+            BlockInit.POLISHED_MARBLE_STAIRS,           BlockInit.POLISHED_MARBLE_WALL,
 
-            BlockInit.LARGE_MARBLE_BRICKS,
-            BlockInit.LARGE_MARBLE_BRICK_SLAB,
-            BlockInit.LARGE_MARBLE_BRICK_STAIRS,
-            BlockInit.LARGE_MARBLE_BRICK_WALL,
+            BlockInit.MARBLE_BRICKS,                    BlockInit.MARBLE_BRICK_SLAB,
+            BlockInit.MARBLE_BRICK_STAIRS,              BlockInit.MARBLE_BRICK_WALL,
 
-            BlockInit.MARBLE_PILLAR,
-            BlockInit.GILDED_MARBLE_PILLAR,
+            BlockInit.LARGE_MARBLE_BRICKS,              BlockInit.LARGE_MARBLE_BRICK_SLAB,
+            BlockInit.LARGE_MARBLE_BRICK_STAIRS,        BlockInit.LARGE_MARBLE_BRICK_WALL,
 
-            BlockInit.REFRACTORY_BRICKS,
-            BlockInit.REFRACTORY_BRICK_SLAB,
-            BlockInit.REFRACTORY_BRICK_STAIRS,
-            BlockInit.REFRACTORY_BRICK_WALL
+            BlockInit.CHISELED_MARBLE,                  BlockInit.CHISELED_MARBLE_SLAB,
+            BlockInit.CHISELED_MARBLE_STAIRS,           BlockInit.CHISELED_MARBLE_WALL,
+
+            BlockInit.MARBLE_PILLAR,                    BlockInit.GILDED_MARBLE_PILLAR,
+
+            BlockInit.REFRACTORY_BRICKS,                BlockInit.REFRACTORY_BRICK_SLAB,
+            BlockInit.REFRACTORY_BRICK_STAIRS,          BlockInit.REFRACTORY_BRICK_WALL,
+
+            BlockInit.LARGE_REFRACTORY_BRICKS,          BlockInit.LARGE_REFRACTORY_BRICK_SLAB,
+            BlockInit.LARGE_REFRACTORY_BRICK_STAIRS,    BlockInit.LARGE_REFRACTORY_BRICK_WALL
     ));
 
     public static List<RegistryObject<?>> MISC_RESOURCE_BLOCKS = new ArrayList<>(Arrays.asList(
             BlockInit.BLOCK_SLAG,
             BlockInit.REFRACTORY_BRICKS,
+            BlockInit.LARGE_REFRACTORY_BRICKS,
             BlockInit.LIMESTONE,
             BlockInit.MARBLE
     ));

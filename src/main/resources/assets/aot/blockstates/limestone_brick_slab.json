@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aot:block/limestone_brick_slab"
+    },
+    "type=double": {
+      "model": "aot:block/limestone_bricks"
+    },
+    "type=top": {
+      "model": "aot:block/limestone_brick_slab_top"
+    }
+  }
+}

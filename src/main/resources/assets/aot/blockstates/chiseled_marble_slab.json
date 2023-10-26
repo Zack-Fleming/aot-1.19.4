@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aot:block/chiseled_marble_slab"
+    },
+    "type=double": {
+      "model": "aot:block/chiseled_marble"
+    },
+    "type=top": {
+      "model": "aot:block/chiseled_marble_slab_top"
+    }
+  }
+}

@@ -15,6 +15,12 @@
 	"block.aot.limestone_stairs": "Limestone Stairs",
 	"block.aot.limestone_wall": "Limestone Wall",
 
+	"block.aot.limestone_bricks": "Limestone Bricks",
+	"block.aot.limestone_brick_slab": "Limestone Brick Wall",
+	"block.aot.limestone_brick_stairs": "Limestone Brick Stairs",
+	"block.aot.limestone_brick_wall": "Limestone Brick Wall",
+
+
 	"block.aot.marble": "Marble",
 	"block.aot.marble_slab": "Marble Slab",
 	"block.aot.marble_stairs": "Marble Stairs",
@@ -35,9 +41,15 @@
 	"block.aot.large_marble_brick_stairs": "Large Marble Stairs",
 	"block.aot.large_marble_brick_wall": "Large Marble Wall",
 
-
 	"block.aot.marble_pillar": "Marble Pillar",
 	"block.aot.gilded_marble_pillar": "Gilded Marble Pillar",
+
+	"block.aot.chiseled_marble": "Chiseled Marble",
+	"block.aot.chiseled_marble_slab": "Chiseled Marble Slab",
+	"block.aot.chiseled_marble_stairs": "Chiseled Marble Stairs",
+	"block.aot.chiseled_marble_wall": "Chiseled Marble Wall",
+
+
 
 	"block.aot.poor_ore_aluminum": "Poor Bauxite Ore",
 	"block.aot.poor_ore_beryllium": "Poor Bertrandite Ore",
@@ -405,8 +417,14 @@
 
 	"item.aot.refractory_cement": "Refractory Cement",
 	"item.aot.refractory_brick": "Refractory Brick",
+
 	"block.aot.refractory_bricks": "Refractory Bricks",
 	"block.aot.refractory_brick_slab": "Refractory Brick Slab",
 	"block.aot.refractory_brick_stairs": "Refractory Brick Stairs",
-	"block.aot.refractory_brick_wall": "Refractory Brick Wall"
+	"block.aot.refractory_brick_wall": "Refractory Brick Wall",
+
+	"block.aot.large_refractory_bricks": "Large Refractory Bricks",
+	"block.aot.large_refractory_brick_slab": "Large Refractory Brick Slab",
+	"block.aot.large_refractory_brick_stairs": "Large Refractory Brick Stairs",
+	"block.aot.large_refractory_brick_wall": "Large Refractory Brick Wall"
 }
