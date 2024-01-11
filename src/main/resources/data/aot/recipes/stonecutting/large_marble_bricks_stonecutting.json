@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "aot:marble"
-  },
-  "result": "aot:large_marble_bricks",
-  "count": 1
-}

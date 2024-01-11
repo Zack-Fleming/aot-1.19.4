@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "large_refractory_brick_wall",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:large_refractory_bricks"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:large_refractory_brick_wall",
+    "count": 6
+  }
+}

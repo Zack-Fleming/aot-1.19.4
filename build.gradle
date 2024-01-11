@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4.01_build-115'
+version = '1.19.4.01_build-116'
 group = 'com.lightningflash.modid' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ageOfTechnology'
 

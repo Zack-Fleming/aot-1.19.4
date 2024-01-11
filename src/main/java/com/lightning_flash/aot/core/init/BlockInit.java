@@ -394,7 +394,7 @@ public class BlockInit
 
     // misc. resource blocks
     public static final RegistryObject<Block> BLOCK_SLAG =
-            register("block_slag", () -> new Block(RAW_BLOCKS));
+            register("block_slag", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
 
 
     // misc. machine blocks
