@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "aot:polished_limestone"
+  },
+  "result": "aot:polished_limestone_slab",
+  "count": 2
+}

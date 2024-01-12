@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "polished_limestone",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:polished_limestone"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:polished_limestone_wall",
+    "count": 6
+  }
+}
