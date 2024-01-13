@@ -2,6 +2,7 @@ package com.lightning_flash.aot.enums;
 
 public enum OreTypes
 {
+    NATURAL_STONES (-10, 140, 10, 30),
     COM_POOR_TOP(80, 400, 20, 17),
     COM_POOR_BOT(-15, 90, 10, 17),
     COM_RICH    (-65, 15, 10, 10),

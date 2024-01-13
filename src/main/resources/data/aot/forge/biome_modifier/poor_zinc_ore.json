@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features":
+  [
+    "aot:poor_zinc_top_placed",
+    "aot:poor_zinc_bot_placed"
+  ],
+  "step": "underground_ores"
+}
