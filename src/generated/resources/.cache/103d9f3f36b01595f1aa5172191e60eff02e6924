@@ -1,0 +1,5 @@
+// 1.19.4	2024-01-13T12:34:00.216067	Registries
+9e0bed023361e8900e29fe7902ae745fac93fba4 data/aot/worldgen/configured_feature/limestone_ore.json
+d63cde44f78c2a0876af4a3d257c149364da8c9c data/aot/worldgen/configured_feature/marble_ore.json
+5a388a64885522e12bb3dc20d4502307c38a4722 data/aot/worldgen/placed_feature/limestone_placed.json
+6525f3b2f487195a48d915526335cc0824283722 data/aot/worldgen/placed_feature/marble_placed.json
