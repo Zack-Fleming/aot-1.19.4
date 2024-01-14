@@ -45,6 +45,23 @@ public class ModConfiguredFeatures
     public static final ResourceKey<ConfiguredFeature<?, ?>> POOR_ZINC_KEY = registerKey("poor_zinc_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POOR_ZIRCONIUM_KEY = registerKey("poor_zirconium_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ALUMINUM_KEY = registerKey("aluminum_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BERYLLIUM_KEY = registerKey("beryllium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BORON_KEY = registerKey("boron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> COBALT_KEY = registerKey("cobalt_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LEAD_KEY = registerKey("lead_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LITHIUM_KEY = registerKey("lithium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NICKEL_KEY = registerKey("nickel_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PHOSPHORUS_KEY = registerKey("phosphorus_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SILVER_KEY = registerKey("silver_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SULFUR_KEY = registerKey("sulfur_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> THORIUM_KEY = registerKey("thorium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TIN_KEY = registerKey("tin_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TUNGSTEN_KEY = registerKey("tungsten_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> URANIUM_KEY = registerKey("uranium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ZINC_KEY = registerKey("zinc_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ZIRCONIUM_KEY = registerKey("zirconium_ore");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context)
     {
@@ -61,6 +78,7 @@ public class ModConfiguredFeatures
         List<OreConfiguration.TargetBlockState> marbleOres = List.of(
                 OreConfiguration.target(replaceStone, BlockInit.MARBLE.get().defaultBlockState()),
                 OreConfiguration.target(replaceDeepS, BlockInit.MARBLE.get().defaultBlockState()));
+
         List<OreConfiguration.TargetBlockState> poorAluminumOres = List.of(
                 OreConfiguration.target(replaceStone, BlockInit.POOR_ORE_ALUMINUM.get().defaultBlockState()),
                 OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_POOR_ORE_ALUMINUM.get().defaultBlockState()));
@@ -119,6 +137,56 @@ public class ModConfiguredFeatures
                 OreConfiguration.target(replaceStone, BlockInit.POOR_ORE_ZIRCONIUM.get().defaultBlockState()),
                 OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_POOR_ORE_ZIRCONIUM.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> aluminumOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_ALUMINUM.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_ALUMINUM.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> berylliumOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_BERYLLIUM.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_BERYLLIUM.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> boronOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_BORON.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_BORON.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> cobaltOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_COBALT.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_COBALT.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> leadOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_LEAD.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_LEAD.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> lithiumOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_LITHIUM.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_LITHIUM.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> phosphorusOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_PHOSPHORUS.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_PHOSPHORUS.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> nickelOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_NICKEL.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_NICKEL.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> silverOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_SILVER.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_SILVER.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> sulfurOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_SULFUR.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_SULFUR.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> thoriumOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_THORIUM.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_THORIUM.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> tinOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_TIN.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_TIN.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> tungstenOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_TUNGSTEN.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_TUNGSTEN.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> uraniumOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_URANIUM.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_TUNGSTEN.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> zincOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_ZINC.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_ZINC.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> zirconiumOres = List.of(
+                OreConfiguration.target(replaceStone, BlockInit.ORE_ZIRCONIUM.get().defaultBlockState()),
+                OreConfiguration.target(replaceDeepS, BlockInit.DEEPSLATE_ORE_ZIRCONIUM.get().defaultBlockState()));
+
+
         // register the new configurations
         register(context, LIMESTONE_KEY, Feature.ORE, new OreConfiguration(limestoneOres, OreTypes.NATURAL_STONES.getVeinSize()));
         register(context, MARBLE_KEY,    Feature.ORE, new OreConfiguration(marbleOres, OreTypes.NATURAL_STONES.getVeinSize()));
@@ -142,6 +210,23 @@ public class ModConfiguredFeatures
         register(context, POOR_URANIUM_KEY, Feature.ORE, new OreConfiguration(poorUraniumOres, OreTypes.UNC_POOR.getVeinSize()));
         register(context, POOR_ZINC_KEY, Feature.ORE, new OreConfiguration(poorZincOres, OreTypes.COM_POOR_TOP.getVeinSize()));
         register(context, POOR_ZIRCONIUM_KEY, Feature.ORE, new OreConfiguration(poorZirconiumOres, OreTypes.UNC_POOR.getVeinSize()));
+
+        register(context, ALUMINUM_KEY,Feature.ORE, new OreConfiguration(aluminumOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, BERYLLIUM_KEY,Feature.ORE, new OreConfiguration(berylliumOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, BORON_KEY,Feature.ORE, new OreConfiguration(boronOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, COBALT_KEY,Feature.ORE, new OreConfiguration(cobaltOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, LEAD_KEY,Feature.ORE, new OreConfiguration(leadOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, LITHIUM_KEY,Feature.ORE, new OreConfiguration(lithiumOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, PHOSPHORUS_KEY,Feature.ORE, new OreConfiguration(phosphorusOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, NICKEL_KEY,Feature.ORE, new OreConfiguration(nickelOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, SILVER_KEY,Feature.ORE, new OreConfiguration(silverOres, OreTypes.RAR_RICH.getVeinSize()));
+        register(context, SULFUR_KEY,Feature.ORE, new OreConfiguration(sulfurOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, THORIUM_KEY,Feature.ORE, new OreConfiguration(thoriumOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, TIN_KEY,Feature.ORE, new OreConfiguration(tinOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, TUNGSTEN_KEY,Feature.ORE, new OreConfiguration(tungstenOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, URANIUM_KEY,Feature.ORE, new OreConfiguration(uraniumOres, OreTypes.UNC_RICH.getVeinSize()));
+        register(context, ZINC_KEY,Feature.ORE, new OreConfiguration(zincOres, OreTypes.COM_RICH.getVeinSize()));
+        register(context, ZIRCONIUM_KEY,Feature.ORE, new OreConfiguration(zirconiumOres, OreTypes.UNC_RICH.getVeinSize()));
     }
 
 

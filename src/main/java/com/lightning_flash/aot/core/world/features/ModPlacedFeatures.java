@@ -52,6 +52,23 @@ public class ModPlacedFeatures
     public static final ResourceKey<PlacedFeature> POOR_ZINC_BOT_PLACED_KEY = createKey("poor_zinc_bot_placed");
     public static final ResourceKey<PlacedFeature> POOR_ZIRCONIUM_PLACED_KEY = createKey("poor_zirconium_placed");
 
+    public static final ResourceKey<PlacedFeature> ALUMINUM_PLACED_KEY = createKey("aluminum_placed");
+    public static final ResourceKey<PlacedFeature> BERYLLIUM_PLACED_KEY = createKey("beryllium_placed");
+    public static final ResourceKey<PlacedFeature> BORON_PLACED_KEY = createKey("boron_placed");
+    public static final ResourceKey<PlacedFeature> COBALT_PLACED_KEY = createKey("cobalt_placed");
+    public static final ResourceKey<PlacedFeature> LEAD_PLACED_KEY = createKey("lead_placed");
+    public static final ResourceKey<PlacedFeature> LITHIUM_PLACED_KEY = createKey("lithium_placed");
+    public static final ResourceKey<PlacedFeature> NICKEL_PLACED_KEY = createKey("nickel_placed");
+    public static final ResourceKey<PlacedFeature> PHOSPHORUS_PLACED_KEY = createKey("phosphorus_placed");
+    public static final ResourceKey<PlacedFeature> SILVER_PLACED_KEY = createKey("silver_placed");
+    public static final ResourceKey<PlacedFeature> SULFUR_PLACED_KEY = createKey("sulfur_placed");
+    public static final ResourceKey<PlacedFeature> THORIUM_PLACED_KEY = createKey("thorium_placed");
+    public static final ResourceKey<PlacedFeature> TIN_PLACED_KEY = createKey("tin_placed");
+    public static final ResourceKey<PlacedFeature> TUNGSTEN_PLACED_KEY = createKey("tungsten_placed");
+    public static final ResourceKey<PlacedFeature> URANIUM_PLACED_KEY = createKey("uranium_placed");
+    public static final ResourceKey<PlacedFeature> ZINC_PLACED_KEY = createKey("zinc_placed");
+    public static final ResourceKey<PlacedFeature> ZIRCONIUM_PLACED_KEY = createKey("zirconium_placed");
+
 
     // placement configurations
     private static final List<PlacementModifier> NAT_STONE = ModOrePlacement.commonOrePlacement(
@@ -132,6 +149,23 @@ public class ModPlacedFeatures
         register(context, POOR_ZINC_TOP_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.POOR_ZINC_KEY), COM_POOR_TOP);
         register(context, POOR_ZINC_BOT_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.POOR_ZINC_KEY), COM_POOR_BOT);
         register(context, POOR_ZIRCONIUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.POOR_ZIRCONIUM_KEY), UNC_POOR);
+
+        register(context, ALUMINUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.ALUMINUM_KEY), COM_RICH);
+        register(context, BERYLLIUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.BERYLLIUM_KEY), UNC_RICH);
+        register(context, BORON_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.BORON_KEY), UNC_RICH);
+        register(context, COBALT_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.COBALT_KEY), UNC_RICH);
+        register(context, LEAD_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.LEAD_KEY), COM_RICH);
+        register(context, LITHIUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.LITHIUM_KEY), UNC_RICH);
+        register(context, PHOSPHORUS_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.PHOSPHORUS_KEY), COM_RICH);
+        register(context, NICKEL_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.NICKEL_KEY), COM_RICH);
+        register(context, SILVER_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.SILVER_KEY), RAR_RICH);
+        register(context, SULFUR_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.SULFUR_KEY), COM_RICH);
+        register(context, THORIUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.THORIUM_KEY), UNC_RICH);
+        register(context, TIN_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.TIN_KEY), COM_RICH);
+        register(context, TUNGSTEN_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.TUNGSTEN_KEY), UNC_RICH);
+        register(context, URANIUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.URANIUM_KEY), UNC_RICH);
+        register(context, ZINC_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.ZINC_KEY), COM_RICH);
+        register(context, ZIRCONIUM_PLACED_KEY, configuredFeature.getOrThrow(ModConfiguredFeatures.ZIRCONIUM_KEY), UNC_RICH);
     }
 
 
