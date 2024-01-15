@@ -23,6 +23,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SpongeBlock;
 import net.minecraft.world.level.block.WetSpongeBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.SurfaceSystem;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
@@ -36,6 +37,8 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = AOTMain.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class BlockEvents
 {
+    private static final List<Block> HOT_BLOCKS = List.of(Blocks.LAVA, Blocks.LAVA_CAULDRON, Blocks.MAGMA_BLOCK, Blocks.FIRE);
+
     @SubscribeEvent
     public static void rightClickBlock(PlayerInteractEvent.RightClickBlock event)
     {
@@ -74,7 +77,34 @@ public class BlockEvents
 
         if (block instanceof WetSpongeBlock)
         {
-            
+//            System.out.println("i am triggered!!!!");
+//            world.setBlock(new BlockPos(pos.getX() + 1, pos.getY(), pos.getZ()), Blocks.RED_WOOL.defaultBlockState(), 3);
+//            world.setBlock(new BlockPos(pos.getX() - 1, pos.getY(), pos.getZ()), Blocks.RED_WOOL.defaultBlockState(), 3);
+//
+//            world.setBlock(new BlockPos(pos.getX(), pos.getY() + 1, pos.getZ()), Blocks.BLUE_WOOL.defaultBlockState(), 3);
+//            world.setBlock(new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ()), Blocks.BLUE_WOOL.defaultBlockState(), 3);
+//
+//            world.setBlock(new BlockPos(pos.getX(), pos.getY(), pos.getZ() + 1), Blocks.GREEN_WOOL.defaultBlockState(), 3);
+//            world.setBlock(new BlockPos(pos.getX(), pos.getY(), pos.getZ() - 1), Blocks.GREEN_WOOL.defaultBlockState(), 3);
+            int lookDist = 7/2;
+            for (int h = -lookDist; h <= lookDist; h++)
+            {
+                for (int j = -lookDist; j <= lookDist; j ++)
+                {
+                    for (int i = -lookDist; i <= lookDist; i++)
+                    {
+                        BlockPos newPos = new BlockPos(pos.getX() + i, pos.getY() + j, pos.getZ() + h);
+
+                        if (HOT_BLOCKS.contains(world.getBlockState(newPos).getBlock()))
+                        {
+                            world.setBlock(pos, Blocks.SPONGE.defaultBlockState(), 3);
+                            world.levelEvent(2009, pos, 0);
+                            world.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F, (1.0F + world.getRandom().nextFloat() * 0.2F) * 0.7F);
+                            return;
+                        }
+                    }
+                }
+            }
         }
     }
 }
