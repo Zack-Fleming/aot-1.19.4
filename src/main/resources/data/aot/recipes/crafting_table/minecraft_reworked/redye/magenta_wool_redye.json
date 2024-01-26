@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nugget_aluminum",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:magenta_dye"
+    },
+    {
+      "tag": "aot:redye/wool_redye_magenta"
+    }
+  ],
+  "result": {
+    "item": "minecraft:magenta_wool"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nugget_aluminum",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "tag": "aot:redye/carpet_redye_yellow"
+    }
+  ],
+  "result": {
+    "item": "minecraft:yellow_carpet"
+  }
+}

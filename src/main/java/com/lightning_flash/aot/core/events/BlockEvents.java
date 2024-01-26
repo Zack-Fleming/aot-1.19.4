@@ -39,7 +39,12 @@ public class BlockEvents
             Blocks.ORANGE_WOOL.asItem(), Blocks.MAGENTA_WOOL.asItem(), Blocks.LIGHT_BLUE_WOOL.asItem(), Blocks.YELLOW_WOOL.asItem(),
             Blocks.LIME_WOOL.asItem(), Blocks.PINK_WOOL.asItem(), Blocks.GRAY_WOOL.asItem(), Blocks.LIGHT_GRAY_WOOL.asItem(),
             Blocks.CYAN_WOOL.asItem(), Blocks.PURPLE_WOOL.asItem(), Blocks.BLUE_WOOL.asItem(), Blocks.BROWN_WOOL.asItem(),
-            Blocks.GREEN_WOOL.asItem(), Blocks.RED_WOOL.asItem(), Blocks.BLACK_WOOL.asItem());
+            Blocks.GREEN_WOOL.asItem(), Blocks.RED_WOOL.asItem(), Blocks.BLACK_WOOL.asItem(),
+
+            Blocks.ORANGE_CARPET.asItem(), Blocks.MAGENTA_CARPET.asItem(), Blocks.LIGHT_BLUE_CARPET.asItem(), Blocks.YELLOW_CARPET.asItem(),
+            Blocks.LIME_CARPET.asItem(), Blocks.PINK_CARPET.asItem(), Blocks.GRAY_CARPET.asItem(), Blocks.LIGHT_GRAY_CARPET.asItem(),
+            Blocks.CYAN_CARPET.asItem(), Blocks.PURPLE_CARPET.asItem(), Blocks.BLUE_CARPET.asItem(), Blocks.BROWN_CARPET.asItem(),
+            Blocks.GREEN_CARPET.asItem(), Blocks.RED_CARPET.asItem(), Blocks.BLACK_CARPET.asItem());
 
     @SubscribeEvent
     public static void rightClickBlock(PlayerInteractEvent.RightClickBlock event)
@@ -71,8 +76,9 @@ public class BlockEvents
                 if (WOOLEN_BLOCKS.contains(held_item))
                 {
                     ((LayeredCauldronBlock) state.getBlock()).lowerFillLevel(state, level, pos);
+                    System.out.println(held_item.getName(stack).toString() + " - " + held_item.getName(stack).toString().contains("carpet"));
                     level.playSound((Player) null, pos, SoundEvents.PLAYER_SPLASH, SoundSource.BLOCKS, 1.0F, (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
-                    player.drop(new ItemStack(Items.WHITE_WOOL, 1), true);
+                    player.drop(((held_item.getName(stack).toString().contains("carpet")) ? new ItemStack(Items.WHITE_CARPET, 1) : new ItemStack(Items.WHITE_WOOL, 1)), true);
                     stack.setCount(stack.getCount() - 1);
                 }
             }

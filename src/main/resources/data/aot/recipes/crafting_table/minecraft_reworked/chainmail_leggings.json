@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chainmail_leggings",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "T T",
+    "T T"
+  ],
+  "result": {
+    "item": "minecraft:chainmail_leggings"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nugget_aluminum",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "tag": "aot:redye/wool_redye_pink"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_wool"
+  }
+}

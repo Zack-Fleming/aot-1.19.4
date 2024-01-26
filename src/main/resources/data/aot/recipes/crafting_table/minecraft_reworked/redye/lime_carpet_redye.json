@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "nugget_aluminum",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "tag": "aot:redye/carpet_redye_lime"
+    }
+  ],
+  "result": {
+    "item": "minecraft:lime_carpet"
+  }
+}
