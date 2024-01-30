@@ -55,7 +55,7 @@ public class BlockInit
             register("limestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LIMESTONE.get())));
 
     public static final RegistryObject<Block> LIMESTONE_BRICKS = 
-            register("limestone_bricks", () -> new Block(STONE_TYPE));
+            register("limestone_bricks", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> LIMESTONE_BRICK_SLAB =
             register("limestone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(LIMESTONE_BRICKS.get())));
     public static final RegistryObject<Block> LIMESTONE_BRICK_STAIRS =
@@ -64,7 +64,7 @@ public class BlockInit
             register("limestone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LIMESTONE_BRICKS.get())));
 
     public static final RegistryObject<Block> LARGE_LIMESTONE_BRICKS =
-            register("large_limestone_bricks", () -> new Block(STONE_TYPE));
+            register("large_limestone_bricks", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> LARGE_LIMESTONE_BRICK_SLAB =
             register("large_limestone_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(LARGE_LIMESTONE_BRICKS.get())));
     public static final RegistryObject<Block> LARGE_LIMESTONE_BRICK_STAIRS =
@@ -73,13 +73,25 @@ public class BlockInit
             register("large_limestone_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LARGE_LIMESTONE_BRICKS.get())));
 
     public static final RegistryObject<Block> POLISHED_LIMESTONE =
-            register("polished_limestone", () -> new Block(STONE_TYPE));
+            register("polished_limestone", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> POLISHED_LIMESTONE_SLAB =
             register("polished_limestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get())));
     public static final RegistryObject<Block> POLISHED_LIMESTONE_STAIRS =
             register("polished_limestone_stairs", () -> new StairBlock(POLISHED_LIMESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get())));
     public static final RegistryObject<Block> POLISHED_LIMESTONE_WALL =
             register("polished_limestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get())));
+
+    public static final RegistryObject<Block> LIMESTONE_PILLAR =
+            register("limestone_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(LIMESTONE.get())));
+
+    public static final RegistryObject<Block> CHISELED_LIMESTONE =
+            register("chiseled_limestone", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
+    public static final RegistryObject<Block> CHISELED_LIMESTONE_SLAB =
+            register("chiseled_limestone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(LIMESTONE.get())));
+    public static final RegistryObject<Block> CHISELED_LIMESTONE_STAIRS =
+            register("chiseled_limestone_stairs", () -> new StairBlock(LIMESTONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(LIMESTONE.get())));
+    public static final RegistryObject<Block> CHISELED_LIMESTONE_WALL =
+            register("chiseled_limestone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LIMESTONE.get())));
 
 
 
@@ -94,7 +106,7 @@ public class BlockInit
             register("marble_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(MARBLE.get())));
 
     public static final RegistryObject<Block> POLISHED_MARBLE =
-            register("polished_marble", () -> new Block(STONE_TYPE));
+            register("polished_marble", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> POLISHED_MARBLE_SLAB =
             register("polished_marble_slab", ()-> new SlabBlock(BlockBehaviour.Properties.copy(POLISHED_MARBLE.get())));
     public static final RegistryObject<Block> POLISHED_MARBLE_STAIRS =
@@ -103,7 +115,7 @@ public class BlockInit
             register("polished_marble_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(POLISHED_MARBLE.get())));
 
     public static final RegistryObject<Block> MARBLE_BRICKS =
-            register("marble_bricks", () -> new Block(STONE_TYPE));
+            register("marble_bricks", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> MARBLE_BRICK_SLAB =
             register("marble_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(MARBLE_BRICKS.get())));
     public static final RegistryObject<Block> MARBLE_BRICK_STAIRS =
@@ -112,7 +124,7 @@ public class BlockInit
             register("marble_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(MARBLE_BRICKS.get())));
 
     public static final RegistryObject<Block> LARGE_MARBLE_BRICKS =
-            register("large_marble_bricks", () -> new Block(STONE_TYPE));
+            register("large_marble_bricks", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> LARGE_MARBLE_BRICK_SLAB =
             register("large_marble_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(LARGE_MARBLE_BRICKS.get())));
     public static final RegistryObject<Block> LARGE_MARBLE_BRICK_STAIRS =
@@ -126,7 +138,7 @@ public class BlockInit
             register("gilded_marble_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(MARBLE.get())));
 
     public static final RegistryObject<Block> CHISELED_MARBLE =
-            register("chiseled_marble", () -> new Block(STONE_TYPE));
+            register("chiseled_marble", () -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get())));
     public static final RegistryObject<Block> CHISELED_MARBLE_SLAB =
             register("chiseled_marble_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(CHISELED_MARBLE.get())));
     public static final RegistryObject<Block> CHISELED_MARBLE_STAIRS =

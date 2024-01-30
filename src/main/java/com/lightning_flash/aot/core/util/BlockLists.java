@@ -95,6 +95,11 @@ public class BlockLists
             BlockInit.POLISHED_LIMESTONE,               BlockInit.POLISHED_LIMESTONE_SLAB,
             BlockInit.POLISHED_LIMESTONE_STAIRS,        BlockInit.POLISHED_LIMESTONE_WALL,
 
+            BlockInit.CHISELED_LIMESTONE,               BlockInit.CHISELED_LIMESTONE_SLAB,
+            BlockInit.CHISELED_LIMESTONE_STAIRS,        BlockInit.CHISELED_LIMESTONE_WALL,
+
+            BlockInit.LIMESTONE_PILLAR,
+
             BlockInit.MARBLE,                           BlockInit.MARBLE_SLAB,
             BlockInit.MARBLE_STAIRS,                    BlockInit.MARBLE_WALL,
 

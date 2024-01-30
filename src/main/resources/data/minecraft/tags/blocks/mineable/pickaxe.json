@@ -132,6 +132,28 @@
     "aot:limestone_slab",
     "aot:limestone_wall",
 
+    "aot:limestone_bricks",
+    "aot:limestone_brick_stairs",
+    "aot:limestone_brick_slab",
+    "aot:limestone_brick_wall",
+
+    "aot:large_limestone_bricks",
+    "aot:large_limestone_brick_stairs",
+    "aot:large_limestone_brick_slab",
+    "aot:large_limestone_brick_wall",
+
+    "aot:polished_limestone",
+    "aot:polished_limestone_stairs",
+    "aot:polished_limestone_slab",
+    "aot:polished_limestone_wall",
+
+    "aot:chiseled_limestone",
+    "aot:chiseled_limestone_stairs",
+    "aot:chiseled_limestone_slab",
+    "aot:chiseled_limestone_wall",
+
+    "aot:limestone_pillar",
+
     "aot:marble",
     "aot:marble_stairs",
     "aot:marble_slab",
@@ -152,12 +174,22 @@
     "aot:polished_marble_slab",
     "aot:polished_marble_wall",
 
+    "aot:chiseled_marble",
+    "aot:chiseled_marble_stairs",
+    "aot:chiseled_marble_slab",
+    "aot:chiseled_marble_wall",
+
     "aot:marble_pillar",
     "aot:gilded_marble_pillar",
 
     "aot:refractory_bricks",
     "aot:refractory_brick_stairs",
     "aot:refractory_brick_slab",
-    "aot:refractory_brick_wall"
+    "aot:refractory_brick_wall",
+
+    "aot:large_refractory_bricks",
+    "aot:large_refractory_brick_stairs",
+    "aot:large_refractory_brick_slab",
+    "aot:large_refractory_brick_wall"
   ]
 }
