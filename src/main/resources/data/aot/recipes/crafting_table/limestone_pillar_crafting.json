@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "limestone_pillar",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:limestone"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "item": "aot:limestone_pillar"
+  }
+}

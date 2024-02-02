@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "candle",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:gray_dye"
+    },
+    {
+      "tag": "minecraft:candles"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gray_candle"
+  }
+}

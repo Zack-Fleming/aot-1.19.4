@@ -8,7 +8,7 @@
       "item": "minecraft:yellow_dye"
     },
     {
-      "tag": "aot:redye/wool_redye_yellow"
+      "tag": "forge:wool"
     }
   ],
   "result": {

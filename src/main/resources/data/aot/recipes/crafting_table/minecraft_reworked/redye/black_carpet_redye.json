@@ -8,7 +8,7 @@
       "item": "minecraft:black_dye"
     },
     {
-      "tag": "aot:redye/carpet_redye_black"
+      "tag": "forge:carpet"
     }
   ],
   "result": {

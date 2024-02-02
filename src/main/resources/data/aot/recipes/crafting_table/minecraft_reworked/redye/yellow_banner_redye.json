@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "banner",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "result": {
+    "item": "minecraft:yellow_banner"
+  }
+}

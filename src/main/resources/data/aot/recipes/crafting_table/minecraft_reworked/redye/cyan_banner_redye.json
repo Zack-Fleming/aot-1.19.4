@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "banner",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cyan_banner"
+  }
+}

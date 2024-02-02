@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_bed",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purple_bed"
+  }
+}

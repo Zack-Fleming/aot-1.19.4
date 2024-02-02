@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete",
+  "show_notification": true,
+  "key": {
+    "D": {
+      "item": "minecraft:lime_dye"
+    },
+    "T": {
+      "tag": "forge:concretes"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TDT",
+    "TTT"
+  ],
+  "result": {
+    "item": "minecraft:lime_concrete",
+    "count": 8
+  }
+}

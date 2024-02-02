@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_limestone",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:chiseled_limestone"
+    }
+  },
+  "pattern": [
+    "T  ",
+    "TT ",
+    "TTT"
+  ],
+  "result": {
+    "item": "aot:chiseled_limestone_stairs",
+    "count": 4
+  }
+}

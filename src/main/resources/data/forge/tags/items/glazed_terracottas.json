@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:glazed_terracottas/black",
+    "#forge:glazed_terracottas/blue",
+    "#forge:glazed_terracottas/brown",
+    "#forge:glazed_terracottas/cyan",
+    "#forge:glazed_terracottas/gray",
+    "#forge:glazed_terracottas/green",
+    "#forge:glazed_terracottas/light_blue",
+    "#forge:glazed_terracottas/light_gray",
+    "#forge:glazed_terracottas/lime",
+    "#forge:glazed_terracottas/magenta",
+    "#forge:glazed_terracottas/orange",
+    "#forge:glazed_terracottas/pink",
+    "#forge:glazed_terracottas/purple",
+    "#forge:glazed_terracottas/red",
+    "#forge:glazed_terracottas/white",
+    "#forge:glazed_terracottas/yellow"
+  ]
+}

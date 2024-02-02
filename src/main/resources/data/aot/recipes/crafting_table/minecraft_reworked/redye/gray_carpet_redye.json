@@ -8,7 +8,7 @@
       "item": "minecraft:gray_dye"
     },
     {
-      "tag": "aot:redye/carpet_redye_gray"
+      "tag": "forge:carpet"
     }
   ],
   "result": {

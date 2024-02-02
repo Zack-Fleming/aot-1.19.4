@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:concrete_powders/black",
+    "#forge:concrete_powders/blue",
+    "#forge:concrete_powders/brown",
+    "#forge:concrete_powders/cyan",
+    "#forge:concrete_powders/gray",
+    "#forge:concrete_powders/green",
+    "#forge:concrete_powders/light_blue",
+    "#forge:concrete_powders/light_gray",
+    "#forge:concrete_powders/lime",
+    "#forge:concrete_powders/magenta",
+    "#forge:concrete_powders/orange",
+    "#forge:concrete_powders/pink",
+    "#forge:concrete_powders/purple",
+    "#forge:concrete_powders/red",
+    "#forge:concrete_powders/white",
+    "#forge:concrete_powders/yellow"
+  ]
+}

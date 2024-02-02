@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_limestone",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "aot:limestone_slab"
+    }
+  },
+  "pattern": [
+    "TT",
+    "TT"
+  ],
+  "result": {
+    "item": "aot:chiseled_limestone",
+    "count": 2
+  }
+}

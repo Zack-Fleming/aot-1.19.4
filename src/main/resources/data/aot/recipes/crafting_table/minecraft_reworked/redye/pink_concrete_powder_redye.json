@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete",
+  "show_notification": true,
+  "key": {
+    "D": {
+      "item": "minecraft:pink_dye"
+    },
+    "T": {
+      "tag": "forge:concrete_powders"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TDT",
+    "TTT"
+  ],
+  "result": {
+    "item": "minecraft:pink_concrete_powder",
+    "count": 8
+  }
+}

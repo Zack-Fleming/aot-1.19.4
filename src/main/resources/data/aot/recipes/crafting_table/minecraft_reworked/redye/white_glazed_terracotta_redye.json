@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_glazed_terracotta",
+  "show_notification": true,
+  "key": {
+    "D": {
+      "item": "minecraft:white_dye"
+    },
+    "T": {
+      "tag": "forge:glazed_terracottas"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TDT",
+    "TTT"
+  ],
+  "result": {
+    "item": "minecraft:white_glazed_terracotta",
+    "count": 8
+  }
+}

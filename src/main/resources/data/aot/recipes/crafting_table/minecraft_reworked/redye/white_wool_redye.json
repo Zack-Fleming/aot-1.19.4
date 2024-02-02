@@ -8,7 +8,7 @@
       "item": "minecraft:white_dye"
     },
     {
-      "tag": "aot:redye/wool_redye_white"
+      "tag": "forge:wool"
     }
   ],
   "result": {

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_bed",
+  "show_notification": true,
+  "ingredients": [
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "result": {
+    "item": "minecraft:light_blue_bed"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_glass_pane",
+  "show_notification": true,
+  "key": {
+    "D": {
+      "item": "minecraft:yellow_dye"
+    },
+    "G": {
+      "tag": "forge:stained_glass_panes"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "result": {
+    "item": "minecraft:yellow_stained_glass_pane",
+    "count": 8
+  }
+}

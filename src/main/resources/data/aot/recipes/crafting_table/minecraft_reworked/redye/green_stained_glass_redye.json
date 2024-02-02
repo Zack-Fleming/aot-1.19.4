@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stained_glass",
+  "show_notification": true,
+  "key": {
+    "D": {
+      "item": "minecraft:green_dye"
+    },
+    "G": {
+      "tag": "forge:stained_glass"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "result": {
+    "item": "minecraft:green_stained_glass",
+    "count": 8
+  }
+}
