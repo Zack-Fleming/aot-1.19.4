@@ -3,12 +3,14 @@ package com.lightning_flash.aot.core.events;
 import com.lightning_flash.aot.AOTMain;
 import com.lightning_flash.aot.core.init.ItemInit;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagEntry;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
@@ -76,10 +78,21 @@ public class BlockEvents
                 if (WOOLEN_BLOCKS.contains(held_item))
                 {
                     ((LayeredCauldronBlock) state.getBlock()).lowerFillLevel(state, level, pos);
-                    System.out.println(held_item.getName(stack).toString() + " - " + held_item.getName(stack).toString().contains("carpet"));
+                    //System.out.println(held_item.getName(stack).toString() + " - " + held_item.getName(stack).toString().contains("carpet"));
+
+                    int numParticles = AOTMain.RAND_SOURCE.nextInt(2, 10);
+                    //for (int i = 0; i < numParticles; i++)
+                    //{
+                        level.addParticle(ParticleTypes.FLAME, pos.getX() + 0.5D, pos.getY() + 1.0D, pos.getZ() + 0.5D, 0.0D, 0.5D, 0.0D);
+                        player.displayClientMessage(Component.literal(numParticles + ""), true);
+                    //}
+
                     level.playSound((Player) null, pos, SoundEvents.PLAYER_SPLASH, SoundSource.BLOCKS, 1.0F, (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
+
                     player.drop(((held_item.getName(stack).toString().contains("carpet")) ? new ItemStack(Items.WHITE_CARPET, 1) : new ItemStack(Items.WHITE_WOOL, 1)), true);
                     stack.setCount(stack.getCount() - 1);
+
+                    //level.setBlock(pos, Blocks.DIAMOND_BLOCK.defaultBlockState(), 11);
                 }
             }
         }
@@ -116,9 +129,7 @@ public class BlockEvents
 
                         if (HOT_BLOCKS.contains(world.getBlockState(newPos).getBlock()))
                         {
-                            world.setBlock(pos, Blocks.SPONGE.defaultBlockState(), 3);
-                            world.levelEvent(2009, pos, 0);
-                            world.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F, (1.0F + world.getRandom().nextFloat() * 0.2F) * 0.7F);
+                            drySponge(world, pos, pos);
                             return;
                         }
                     }
@@ -137,15 +148,17 @@ public class BlockEvents
                     {
                         BlockPos newPos = new BlockPos(pos.getX() + i, pos.getY() + j, pos.getZ() + h);
 
-                        if (world.getBlockState(newPos).getBlock() instanceof WetSpongeBlock)
-                        {
-                            world.setBlock(newPos, Blocks.SPONGE.defaultBlockState(), 3);
-                            world.levelEvent(2009, pos, 0);
-                            world.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F, (1.0F + world.getRandom().nextFloat() * 0.2F) * 0.7F);
-                        }
+                        if (world.getBlockState(newPos).getBlock() instanceof WetSpongeBlock) drySponge(world, pos, newPos);
                     }
                 }
             }
         }
+    }
+
+    private static void drySponge(LevelAccessor world, BlockPos pos, BlockPos newPos)
+    {
+        world.setBlock(newPos, Blocks.SPONGE.defaultBlockState(), 3);
+        world.levelEvent(2009, pos, 0);
+        world.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F, (1.0F + world.getRandom().nextFloat() * 0.2F) * 0.7F);
     }
 }

@@ -7,6 +7,7 @@ import com.lightning_flash.aot.core.init.ItemInit;
 import com.lightning_flash.aot.core.loot.ModLootModifiers;
 import com.lightning_flash.aot.core.util.TabLists;
 import com.mojang.logging.LogUtils;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,7 @@ public class  AOTMain
     public static final String MODID = "aot";                       // Define mod id in a common place for everything to reference
     public static final Logger LOGGER = LogUtils.getLogger();       // Directly reference a slf4j logger
     public static final Random RANDOM = new Random();               // instance of java.util.Random for public use within mod
+    public static final RandomSource RAND_SOURCE = RandomSource.create();           // instance of net.minecraft.util.RandomSource for public use within mod
 
     public AOTMain() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -38,12 +40,9 @@ public class  AOTMain
         modEventBus.addListener(this::commonSetup);                 // Register the commonSetup method for modloading
         modEventBus.addListener(this::addTabItems);                 // add items to the creative tabs
 
-//        ModConfiguredFeatures.register(modEventBus);                // register the configured features
-//        ModPlacedFeatures.register(modEventBus);
-
         ModLootModifiers.register(modEventBus);                     // register the loot modifiers
 
-        MinecraftForge.EVENT_BUS.register(this);              // register the mod
+        MinecraftForge.EVENT_BUS.register(this);                // register the mod
     }
 
     // commands go here

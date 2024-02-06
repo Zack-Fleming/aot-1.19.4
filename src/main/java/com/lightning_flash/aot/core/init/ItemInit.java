@@ -5,6 +5,7 @@ import com.lightning_flash.aot.core.objects.items.tools.debug.BlockWand;
 import com.lightning_flash.aot.core.objects.items.tools.debug.DebugStick;
 import com.lightning_flash.aot.core.objects.items.tools.FireStarter;
 import com.lightning_flash.aot.core.objects.items.tools.debug.ItemWand;
+import com.lightning_flash.aot.core.objects.items.tools.debug.ParticleWand;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +25,7 @@ public class ItemInit
     public static final RegistryObject<Item> DEBUG_STICK = MOD_ITEMS.register("debug_stick", DebugStick::new);
     public static final RegistryObject<Item> ITEM_WAND = MOD_ITEMS.register("item_wand", ItemWand::new);
     public static final RegistryObject<Item> BLOCK_WAND = MOD_ITEMS.register("block_wand", BlockWand::new);
+    public static final RegistryObject<Item> PARTICLE_WAND = MOD_ITEMS.register("particle_wand", ParticleWand::new);
 
     public static final RegistryObject<Item> SMALL_RAW_ALUMINUM = MOD_ITEMS.register("small_raw_aluminum", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> SMALL_RAW_BERYLLIUM = MOD_ITEMS.register("small_raw_beryllium", () -> new Item(PROPERTIES));

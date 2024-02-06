@@ -11,7 +11,7 @@ import java.util.List;
 public class ItemLists
 {
     public static List<RegistryObject<?>> DEBUG = new ArrayList<>(Arrays.asList(
-            ItemInit.DEBUG_STICK, ItemInit.ITEM_WAND, ItemInit.BLOCK_WAND
+            ItemInit.DEBUG_STICK, ItemInit.ITEM_WAND, ItemInit.BLOCK_WAND, ItemInit.PARTICLE_WAND
     ));
     public static List<RegistryObject<?>> TOOLS = new ArrayList<>(Arrays.asList(
             ItemInit.CRUDE_SIRE_STARTER
