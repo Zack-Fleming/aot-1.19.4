@@ -1,6 +1,7 @@
 package com.lightning_flash.aot.core.init;
 
 import com.lightning_flash.aot.AOTMain;
+import com.lightning_flash.aot.core.objects.items.FuelItem;
 import com.lightning_flash.aot.core.objects.items.tools.debug.BlockWand;
 import com.lightning_flash.aot.core.objects.items.tools.debug.DebugStick;
 import com.lightning_flash.aot.core.objects.items.tools.FireStarter;
@@ -72,7 +73,7 @@ public class ItemInit
     public static final RegistryObject<Item> INGOT_BRASS = MOD_ITEMS.register("ingot_brass", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> INGOT_BRONZE = MOD_ITEMS.register("ingot_bronze", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> INGOT_CAST_IRON = MOD_ITEMS.register("ingot_cast_iron", () -> new Item(PROPERTIES));
-    public static final RegistryObject<Item> COAL_COKE = MOD_ITEMS.register("coal_coke", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> COAL_COKE = MOD_ITEMS.register("coal_coke", () -> new FuelItem(PROPERTIES, 3200, 2500));
     public static final RegistryObject<Item> INGOT_COBALT = MOD_ITEMS.register("ingot_cobalt", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> INGOT_COPPER = MOD_ITEMS.register("ingot_copper", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> INGOT_GRAPHITE = MOD_ITEMS.register("ingot_graphite", () -> new Item(PROPERTIES));
@@ -218,4 +219,17 @@ public class ItemInit
 
     public static final RegistryObject<Item> REFRACTORY_CEMENT = MOD_ITEMS.register("refractory_cement", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> REFRACTORY_BRICK = MOD_ITEMS.register("refractory_brick", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> FLAKED_FLINT = MOD_ITEMS.register("flaked_flint", () -> new Item(PROPERTIES));
+
+//    public static final RegistryObject<Item> AXE_BONE;
+//    public static final RegistryObject<Item> HOE_BONE;
+//    public static final RegistryObject<Item> PICKAXE_BONE;
+//    public static final RegistryObject<Item> SHOVEL_BONE;
+//    public static final RegistryObject<Item> SWORD_BONE;
+//
+//    public static final RegistryObject<Item> AXE_FLINT;
+//    public static final RegistryObject<Item> HOE_FLINT;
+//    public static final RegistryObject<Item> PICKAXE_FLINT;
+//    public static final RegistryObject<Item> SHOVEL_FLINT;
+//    public static final RegistryObject<Item> SWORD_FLINT;
 }

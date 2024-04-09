@@ -52,7 +52,7 @@ public class BlockEvents
     public static void rightClickBlock(PlayerInteractEvent.RightClickBlock event)
     {
         Player player       = event.getEntity();
-        Level level         = player.getLevel();
+        Level level         = event.getLevel();
         BlockPos pos        = event.getPos();
         BlockState state    = level.getBlockState(pos);
         ItemStack stack     = player.getItemInHand(event.getHand());
@@ -60,7 +60,7 @@ public class BlockEvents
 
         if (!level.isClientSide)
         {
-            // bone shard event
+            // bone shard and flaked flint events
             if (state.is(Tags.Blocks.STONE) || state.is(Blocks.DRIPSTONE_BLOCK) || state.is(Blocks.OBSIDIAN) || state.is(Blocks.CRYING_OBSIDIAN))
             {
                 if (held_item == Items.BONE)
@@ -69,6 +69,13 @@ public class BlockEvents
                     level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
                     stack.setCount(stack.getCount() - 1);
                     player.drop(new ItemStack(ItemInit.SHARD_BONE.get().asItem(), count), true);
+                }
+                if (held_item == Items.FLINT)
+                {
+                    int count = AOTMain.RANDOM.nextInt(0, 3);
+                    level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
+                    stack.setCount(stack.getCount() - 1);
+                    player.drop(new ItemStack(ItemInit.FLAKED_FLINT.get().asItem(), count), true);
                 }
             }
 
@@ -83,9 +90,11 @@ public class BlockEvents
                     int numParticles = AOTMain.RAND_SOURCE.nextInt(2, 10);
                     //for (int i = 0; i < numParticles; i++)
                     //{
-                        level.addParticle(ParticleTypes.FLAME, pos.getX() + 0.5D, pos.getY() + 1.0D, pos.getZ() + 0.5D, 0.0D, 0.5D, 0.0D);
+                        level.addParticle(ParticleTypes.SMOKE, pos.getX() + 0.5D, pos.getY() + 2.0D, pos.getZ() + 0.5D, 0.0D, 0.5D, 0.0D);
                         player.displayClientMessage(Component.literal(numParticles + ""), true);
                     //}
+
+
 
                     level.playSound((Player) null, pos, SoundEvents.PLAYER_SPLASH, SoundSource.BLOCKS, 1.0F, (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
 

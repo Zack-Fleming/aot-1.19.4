@@ -26,7 +26,6 @@ public class TabLists
             addAll(ItemLists.DUSTS);
             addAll(ItemLists.NUGGETS);
             addAll(ItemLists.SMALL_DUSTS);
-            addAll(ItemLists.MISC_COMPONENTS);
 
             addAll(BlockLists.POOR_ORES_STONE);
             addAll(BlockLists.POOR_ORES_DEEPSLATE);
@@ -35,6 +34,8 @@ public class TabLists
             addAll(BlockLists.RESOURCE_BLOCKS);
             addAll(BlockLists.RAW_BLOCKS);
             addAll(BlockLists.MISC_RESOURCE_BLOCKS);
+
+            addAll(ItemLists.STONE_AGE_RESOURCES);
         }
     };
     public static List<RegistryObject<?>> BUILDING_TAB_ITEMS = new ArrayList<>(){

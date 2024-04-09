@@ -86,9 +86,10 @@ public class ItemLists
             ItemInit.SMALL_DUST_TUNGSTEN_CARBIDE,   ItemInit.SMALL_DUST_URANIUM,        ItemInit.SMALL_DUST_ZINC,
             ItemInit.SMALL_DUST_ZIRCONIUM
     ));
-    public static List<RegistryObject<?>> MISC_COMPONENTS = new ArrayList<>(Arrays.asList(
+    public static List<RegistryObject<?>> STONE_AGE_RESOURCES = new ArrayList<>(Arrays.asList(
             ItemInit.SHARD_STONE,       ItemInit.SHARD_BONE,            ItemInit.LEATHER_TANNED,
             ItemInit.PLANT_FIBER,       ItemInit.MESH_PLANT_FIBER,      ItemInit.MESH_STRING,
-            ItemInit.REFRACTORY_CEMENT, ItemInit.REFRACTORY_BRICK,      ItemInit.SLAG
+            ItemInit.REFRACTORY_CEMENT, ItemInit.REFRACTORY_BRICK,      ItemInit.SLAG,
+            ItemInit.FLAKED_FLINT
     ));
 }
