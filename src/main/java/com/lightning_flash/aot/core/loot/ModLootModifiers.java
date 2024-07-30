@@ -13,8 +13,10 @@ public class ModLootModifiers
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> MOD_LOOT_MODIFIER_SERIALIZERS =
             DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, AOTMain.MODID);
 
-    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> REPLACE_ITEM =
+
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ENCHANTED_REPLACE_ITEM =
         MOD_LOOT_MODIFIER_SERIALIZERS.register("enchanted_replace_item", EnchantmentReplaceItemModifier.CODEC);
+
 
     public static void register(IEventBus bus){ MOD_LOOT_MODIFIER_SERIALIZERS.register(bus); }
 }

@@ -11,6 +11,7 @@ public class TabLists
     public static List<RegistryObject<?>> DEBUG_TAB_ITEMS = new ArrayList<>(){
         {
             addAll(ItemLists.DEBUG);
+            addAll(BlockLists.DEBUG);
         }
     };
     public static List<RegistryObject<?>> TOOL_TAB_ITEMS = new ArrayList<>(){

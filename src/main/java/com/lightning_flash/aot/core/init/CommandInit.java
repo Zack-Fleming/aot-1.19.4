@@ -3,6 +3,7 @@ package com.lightning_flash.aot.core.init;
 
 import com.lightning_flash.aot.common.commands.AOTGive;
 import com.lightning_flash.aot.common.commands.AOTMan;
+import com.lightning_flash.aot.common.commands.AOTMisc;
 import com.lightning_flash.aot.common.commands.AOTRegTest;
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.commands.CommandSourceStack;
@@ -21,5 +22,6 @@ public class CommandInit
         AOTGive.register(dispatcher);
         AOTMan.register(dispatcher);
         AOTRegTest.register(dispatcher);
+        AOTMisc.register(dispatcher);
     }
 }

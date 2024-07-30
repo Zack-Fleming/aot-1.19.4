@@ -9,6 +9,7 @@
 	"item.aot.item_wand": "§4Wand of Iteming§4§r",
 	"item.aot.block_wand": "§4Wand of Blockening§4§r",
 	"item.aot.particle_wand": "§4Wand of Glittering§4§r",
+	"block.aot.debug_block": "§4Block of Debugging§4§r",
 
 
 	"block.aot.limestone": "Limestone",
@@ -378,6 +379,18 @@
 	"item.aot.small_dust_zinc": "Small Zinc Dust",
 	"item.aot.small_dust_zirconium": "Small Zirconium Dust",
 
+	"item.aot.refractory_cement": "Refractory Cement",
+	"item.aot.refractory_brick": "Refractory Brick",
+
+	"block.aot.refractory_bricks": "Refractory Bricks",
+	"block.aot.refractory_brick_slab": "Refractory Brick Slab",
+	"block.aot.refractory_brick_stairs": "Refractory Brick Stairs",
+	"block.aot.refractory_brick_wall": "Refractory Brick Wall",
+
+	"block.aot.large_refractory_bricks": "Large Refractory Bricks",
+	"block.aot.large_refractory_brick_slab": "Large Refractory Brick Slab",
+	"block.aot.large_refractory_brick_stairs": "Large Refractory Brick Stairs",
+	"block.aot.large_refractory_brick_wall": "Large Refractory Brick Wall",
 
 	"item.aot.slag": "Slag",
 	"block.aot.block_slag": "Block of slag",
@@ -387,9 +400,13 @@
 	"item.aot.shard_stone": "Stone Shard",
 	"item.aot.leather_tanned": "Tanned Leather",
 	"item.aot.plant_fiber": "Plant Fibers",
+	"item.aot.dried_plant_fiber": "Dried Plant Fibers",
 	"item.aot.mesh_plant_fiber": "Plant Fiber Mesh",
 	"item.aot.mesh_string": "String Mesh",
 	"item.aot.flaked_flint": "Flaked Flint",
+	"item.aot.raw_tree_sap": "Raw Tree Sap",
+	"item.aot.tree_sap_glue": "Tree Sap Glue",
+	"item.aot.crude_tool_binding": "Crude Tool Binding",
 
 	"item.aot.axe_bone": "Bone Axe",
 	"item.aot.hoe_bone": "Bone Hoe",
@@ -403,6 +420,10 @@
 	"item.aot.shovel_flint": "Flint Shovel",
 	"item.aot.sword_flint": "Flint Sword",
 
+	"item.aot.scythe_wooden": "Wooden Scythe",
+	"item.aot.scythe_stone": "Stone Scythe",
+	"item.aot.scythe_flint": "Flint Scythe",
+	"item.aot.scythe_bone": "Bone Scythe",
 
 	"item.aot.crude_fire_starter": "Crude Fire Starter",
 	"item.aot.crude_plant_sifter": "Crude Plant Mesh Sifter",
@@ -412,6 +433,15 @@
 	"item.aot.hammer_stone": "Stone Hammer",
 	"item.aot.hammer_flint": "Flint Hammer",
 	"item.aot.hammer_bone": "Bone Hammer",
+
+	"item.aot.wooden_treetap": "Wooden Treetap",
+	"item.aot.arrow_iron": "Iron Arrow",
+	"item.aot.spear_iron": "Iron Spear",
+
+	"enchantment.aot.auto_planter": "Auto Planter",
+	"enchantment.aot.harvest_size": "Harvesting Size",
+	"enchantment.aot.auto_smelting": "Auto Smelting",
+	"enchantment.aot.ore_excavator": "Ore Excavator",
 
 
 	"item.aot.axe_copper": "Copper Axe",
@@ -426,24 +456,6 @@
 	"item.aot.shovel_bronze": "Bronze Shovel",
 	"item.aot.sword_bronze": "Bronze Sword",
 
-	"item.aot.wooden_treetap": "Wooden Treetap",
-	"item.aot.arrow_iron": "Iron Arrow",
-	"item.aot.spear_iron": "Iron Spear",
-
 	"item.aot.hammer_iron": "Iron Hammer",
-	"item.aot.hammer_bronze": "Bronze Hammer",
-
-
-	"item.aot.refractory_cement": "Refractory Cement",
-	"item.aot.refractory_brick": "Refractory Brick",
-
-	"block.aot.refractory_bricks": "Refractory Bricks",
-	"block.aot.refractory_brick_slab": "Refractory Brick Slab",
-	"block.aot.refractory_brick_stairs": "Refractory Brick Stairs",
-	"block.aot.refractory_brick_wall": "Refractory Brick Wall",
-
-	"block.aot.large_refractory_bricks": "Large Refractory Bricks",
-	"block.aot.large_refractory_brick_slab": "Large Refractory Brick Slab",
-	"block.aot.large_refractory_brick_stairs": "Large Refractory Brick Stairs",
-	"block.aot.large_refractory_brick_wall": "Large Refractory Brick Wall"
+	"item.aot.hammer_bronze": "Bronze Hammer"
 }

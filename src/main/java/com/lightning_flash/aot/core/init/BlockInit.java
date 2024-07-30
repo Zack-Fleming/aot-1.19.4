@@ -3,17 +3,29 @@ package com.lightning_flash.aot.core.init;
 import com.lightning_flash.aot.AOTMain;
 import com.lightning_flash.aot.core.objects.blocks.AlkaliResourceBlock;
 import com.lightning_flash.aot.core.objects.blocks.ToolTipBlock;
+import com.lightning_flash.aot.core.objects.blocks.debug.DebugBlock;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class BlockInit
@@ -43,6 +55,11 @@ public class BlockInit
 
     // block registry
     public static final DeferredRegister<Block> MOD_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AOTMain.MODID);
+
+
+    // debugging stuff
+    public static final RegistryObject<Block> DEBUG_BLOCK = register("debug_block", DebugBlock::new);
+
 
     // limestone stuff
     public static final RegistryObject<Block> LIMESTONE =
@@ -314,7 +331,7 @@ public class BlockInit
     public static final RegistryObject<Block> BlOCK_CAST_IRON =
             register("block_cast_iron", () -> new Block(RESOURCES));
     public static final RegistryObject<Block> BlOCK_COAL_COKE =
-            register("block_coal_coke", () -> new Block(RESOURCES));
+            registerFuel("block_coal_coke", 32000, () -> new Block(RESOURCES));
     public static final RegistryObject<Block> BlOCK_COBALT =
             register("block_cobalt", () -> new Block(RESOURCES));
     public static final RegistryObject<Block> BlOCK_COPPER =
@@ -429,12 +446,33 @@ public class BlockInit
             register("large_refractory_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LARGE_REFRACTORY_BRICKS.get())));
 
 
+
+
     
     //auto registering of item version of blocks
-    public static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier)
+    private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier)
     {
         RegistryObject<T> block = MOD_BLOCKS.register(name, supplier);
         ItemInit.MOD_ITEMS.register(name, () -> new BlockItem(block.get(), ItemInit.PROPERTIES));
+
+        return block;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerFuel(String name, int burnTime, Supplier<T> supplier)
+    {
+        RegistryObject<T> block = MOD_BLOCKS.register(name, supplier);
+        ItemInit.MOD_ITEMS.register(name, () -> new BlockItem(block.get(), ItemInit.PROPERTIES)
+        {
+            @Override
+            public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) { return burnTime; }
+
+            @Override
+            public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tip, TooltipFlag flag)
+            {
+                super.appendHoverText(stack, level, tip, flag);
+                tip.add(Component.literal("Smelts " + (burnTime / 200) + " items/fuel [" + ((burnTime / 200) * stack.getCount()) + " for this stack]" ));
+            }
+        });
 
         return block;
     }

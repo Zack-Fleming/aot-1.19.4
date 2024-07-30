@@ -124,6 +124,19 @@ public class AOTGive
                                                                 IntegerArgumentType.getInteger(context, "amount"))
                                                         )
                                                 )
+                                        ).then(Commands.literal("wools")
+                                                .then(Commands.argument("amount", IntegerArgumentType.integer(1, 64))
+                                                        .executes(context -> executeMC(context, "wool", "block",
+                                                                IntegerArgumentType.getInteger(context, "amount"))
+                                                        )
+                                                )
+                                        )
+                                        .then(Commands.literal("carpets")
+                                                .then(Commands.argument("amount", IntegerArgumentType.integer(1, 64))
+                                                        .executes(context -> executeMC(context, "carpet", "block",
+                                                                IntegerArgumentType.getInteger(context, "amount"))
+                                                        )
+                                                )
                                         )
                                 )
                         );
@@ -186,13 +199,27 @@ public class AOTGive
             {
                 for (Item item : ForgeRegistries.ITEMS)
                 {
-                    String bname = item.getName(new ItemStack(item)).getContents().toString();
+                    String iname = item.getName(new ItemStack(item)).getContents().toString();
+                    if (iname.contains("minecraft"))
+                    {
+                        String[] temp = iname.split("[.']");
+
+                        if (temp[3].contains(name))
+                            player.getInventory().add(new ItemStack(item, num));
+                    }
+                }
+            }
+            else if (registry.equals("block"))
+            {
+                for (Block block : ForgeRegistries.BLOCKS)
+                {
+                    String bname = block.getName().getContents().toString();
                     if (bname.contains("minecraft"))
                     {
                         String[] temp = bname.split("[.']");
 
                         if (temp[3].contains(name))
-                            player.getInventory().add(new ItemStack(item, num));
+                            player.getInventory().add(new ItemStack(block.asItem(), num));
                     }
                 }
             }

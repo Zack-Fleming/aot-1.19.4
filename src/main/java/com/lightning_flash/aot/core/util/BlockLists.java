@@ -10,6 +10,10 @@ import java.util.List;
 
 public class BlockLists
 {
+    public static List<RegistryObject<?>> DEBUG = new ArrayList<>(Arrays.asList(
+            BlockInit.DEBUG_BLOCK
+    ));
+
     public static List<RegistryObject<?>> POOR_ORES_STONE = new ArrayList<>(Arrays.asList(
             BlockInit.POOR_ORE_ALUMINUM,    BlockInit.POOR_ORE_BERYLLIUM,   BlockInit.POOR_ORE_BORON,
             BlockInit.POOR_ORE_COBALT,      BlockInit.POOR_ORE_COPPER,      BlockInit.POOR_ORE_GOLD,

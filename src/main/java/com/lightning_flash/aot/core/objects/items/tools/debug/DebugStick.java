@@ -5,6 +5,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -50,10 +51,8 @@ public class DebugStick extends Item
                     "\nClicked Block:" +
                             "\n -name: " + cBlock +
                             "\n -pos : " + pos.getX() + ", " + pos.getY() + ", " + pos.getZ() +
-                            "\n -h. level: WIP" +
-                            "\n -h. tool : WIP" +
                             "\n -resistance: " + cBlock.getExplosionResistance(cBlock.defaultBlockState(),level,pos,null) +
-                            //"\n -strength: " + cBlock +
+                            "\n -drops: " + Block.getDrops(cBlock.defaultBlockState(), (ServerLevel) level, pos, null) +
                             "\n -Sound Events:" +
                             "\n   -break: " + cBlock.getSoundType(cBlock.defaultBlockState(), level, pos, player).getBreakSound().getLocation().getPath() +
                             "\n   -place: " + cBlock.getSoundType(cBlock.defaultBlockState(),level,pos,player).getPlaceSound().getLocation().getPath() +

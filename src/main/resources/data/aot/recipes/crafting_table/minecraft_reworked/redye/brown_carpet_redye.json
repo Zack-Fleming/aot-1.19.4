@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "nugget_aluminum",
+  "group": "brown_carpet",
   "show_notification": true,
   "ingredients": [
     {
       "item": "minecraft:brown_dye"
     },
     {
-      "tag": "forge:carpet"
+      "tag": "minecraft:wool_carpets"
     }
   ],
   "result": {

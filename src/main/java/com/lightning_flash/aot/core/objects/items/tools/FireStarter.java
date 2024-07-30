@@ -41,41 +41,44 @@ public class FireStarter extends Item
         BlockPos pos = context.getClickedPos();
         BlockState state = level.getBlockState(pos);
 
-        //play the flint and steel use sound
-        level.playSound(player, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , AOTMain.RANDOM.nextFloat());
-
-        // catch shit on fire
-        if (AOTMain.RANDOM.nextInt(101) % 3 == 0)
+        if (!level.isClientSide())
         {
-            if (!CampfireBlock.canLight(state) && !CandleBlock.canLight(state) && !CandleCakeBlock.canLight(state))
-            {
-                BlockPos firePos = pos.relative(context.getClickedFace());
-                if (BaseFireBlock.canBePlacedAt(level, firePos, context.getHorizontalDirection()))
-                {
-                    BlockState fireState = BaseFireBlock.getState(level, firePos);
-                    level.setBlock(firePos, fireState, 11);
-                    level.gameEvent(player, GameEvent.BLOCK_PLACE, pos);
+            //play the flint and steel use sound
+            level.playSound(null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , AOTMain.RANDOM.nextFloat());
 
-                    ItemStack stack = context.getItemInHand();
-                    if (player instanceof ServerPlayer)
+            // catch shit on fire
+            if (AOTMain.RANDOM.nextInt(101) % 3 == 0)
+            {
+                if (!CampfireBlock.canLight(state) && !CandleBlock.canLight(state) && !CandleCakeBlock.canLight(state))
+                {
+                    BlockPos firePos = pos.relative(context.getClickedFace());
+                    if (BaseFireBlock.canBePlacedAt(level, firePos, context.getHorizontalDirection()))
                     {
-                        CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer) player, firePos, stack);
-                        stack.hurtAndBreak(1, player, (e) -> e.broadcastBreakEvent(context.getHand()));
+                        BlockState fireState = BaseFireBlock.getState(level, firePos);
+                        level.setBlock(firePos, fireState, 11);
+                        level.gameEvent(player, GameEvent.BLOCK_PLACE, pos);
+
+                        ItemStack stack = context.getItemInHand();
+                        if (player instanceof ServerPlayer)
+                        {
+                            CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer) player, firePos, stack);
+                            stack.hurtAndBreak(1, player, (e) -> e.broadcastBreakEvent(context.getHand()));
+                        }
+
+                        return InteractionResult.sidedSuccess(level.isClientSide());
                     }
+                    else return InteractionResult.FAIL;
+                }
+                else // try to light campfires and candles
+                {
+                    level.setBlock(pos,state.setValue(BlockStateProperties.LIT, Boolean.TRUE),11);
+                    level.gameEvent(player, GameEvent.BLOCK_CHANGE, pos);
+
+                    if (player != null)
+                        context.getItemInHand().hurtAndBreak(1, player, (e) -> e.broadcastBreakEvent(context.getHand()));
 
                     return InteractionResult.sidedSuccess(level.isClientSide());
                 }
-                else return InteractionResult.FAIL;
-            }
-            else // try to light campfires and candles
-            {
-                level.setBlock(pos,state.setValue(BlockStateProperties.LIT, Boolean.TRUE),11);
-                level.gameEvent(player, GameEvent.BLOCK_CHANGE, pos);
-
-                if (player != null)
-                    context.getItemInHand().hurtAndBreak(1, player, (e) -> e.broadcastBreakEvent(context.getHand()));
-
-                return InteractionResult.sidedSuccess(level.isClientSide());
             }
         }
 

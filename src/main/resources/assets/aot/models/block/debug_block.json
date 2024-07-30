@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "aot:block/debug_green",
+    "down": "aot:block/debug_green",
+    "north": "aot:block/debug_blue",
+    "south": "aot:block/debug_blue",
+    "east": "aot:block/debug_red",
+    "west": "aot:block/debug_red"
+  }
+}

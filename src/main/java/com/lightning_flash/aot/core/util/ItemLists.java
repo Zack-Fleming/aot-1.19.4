@@ -1,6 +1,7 @@
 package com.lightning_flash.aot.core.util;
 
 import com.lightning_flash.aot.core.init.BlockInit;
+import com.lightning_flash.aot.core.init.EnchantmentInit;
 import com.lightning_flash.aot.core.init.ItemInit;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -14,7 +15,14 @@ public class ItemLists
             ItemInit.DEBUG_STICK, ItemInit.ITEM_WAND, ItemInit.BLOCK_WAND, ItemInit.PARTICLE_WAND
     ));
     public static List<RegistryObject<?>> TOOLS = new ArrayList<>(Arrays.asList(
-            ItemInit.CRUDE_SIRE_STARTER
+            ItemInit.CRUDE_SIRE_STARTER,    ItemInit.AXE_BONE,          ItemInit.HOE_BONE,
+            ItemInit.PICKAXE_BONE,          ItemInit.SHOVEL_BONE,       ItemInit.SWORD_BONE,
+            ItemInit.AXE_FLINT,             ItemInit.HOE_FLINT,         ItemInit.PICKAXE_FLINT,
+            ItemInit.SHOVEL_FLINT,          ItemInit.SWORD_FLINT,       ItemInit.SCYTHE_WOODEN,
+            ItemInit.SCYTHE_BONE,           ItemInit.SCYTHE_FLINT,      ItemInit.SCYTHE_STONE,
+            ItemInit.CRUDE_PLANT_SIFTER,    ItemInit.CRUDE_STRING_SIFTER,   ItemInit.HAMMER_WOODEN,
+            ItemInit.HAMMER_BONE,           ItemInit.HAMMER_FLINT,      ItemInit.HAMMER_STONE,
+            ItemInit.WOODEN_TREETAP
     ));
     public static List<RegistryObject<?>> SMALL_RAW_ORES = new ArrayList<>(Arrays.asList(
             ItemInit.SMALL_RAW_ALUMINUM,    ItemInit.SMALL_RAW_BERYLLIUM,   ItemInit.SMALL_RAW_BORON,
@@ -88,8 +96,9 @@ public class ItemLists
     ));
     public static List<RegistryObject<?>> STONE_AGE_RESOURCES = new ArrayList<>(Arrays.asList(
             ItemInit.SHARD_STONE,       ItemInit.SHARD_BONE,            ItemInit.LEATHER_TANNED,
-            ItemInit.PLANT_FIBER,       ItemInit.MESH_PLANT_FIBER,      ItemInit.MESH_STRING,
-            ItemInit.REFRACTORY_CEMENT, ItemInit.REFRACTORY_BRICK,      ItemInit.SLAG,
-            ItemInit.FLAKED_FLINT
+            ItemInit.PLANT_FIBER,       ItemInit.DRIED_PLANT_FIBER,     ItemInit.MESH_PLANT_FIBER,
+            ItemInit.MESH_STRING,       ItemInit.REFRACTORY_CEMENT,     ItemInit.REFRACTORY_BRICK,
+            ItemInit.SLAG,              ItemInit.FLAKED_FLINT,          ItemInit.RAW_TREE_SAP,
+            ItemInit.TREE_SAP_GLUE,     ItemInit.CRUDE_TOOL_BINDING
     ));
 }

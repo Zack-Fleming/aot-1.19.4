@@ -2,12 +2,13 @@ package com.lightning_flash.aot.core.init;
 
 import com.lightning_flash.aot.AOTMain;
 import com.lightning_flash.aot.core.objects.items.FuelItem;
+import com.lightning_flash.aot.core.objects.items.ShardItem;
+import com.lightning_flash.aot.core.objects.items.tools.*;
 import com.lightning_flash.aot.core.objects.items.tools.debug.BlockWand;
 import com.lightning_flash.aot.core.objects.items.tools.debug.DebugStick;
-import com.lightning_flash.aot.core.objects.items.tools.FireStarter;
 import com.lightning_flash.aot.core.objects.items.tools.debug.ItemWand;
 import com.lightning_flash.aot.core.objects.items.tools.debug.ParticleWand;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -16,6 +17,7 @@ public class ItemInit
 {
     // item tab properties
     public static final Item.Properties PROPERTIES = new Item.Properties();
+    public static final Item.Properties PROPERTIES_TOOL = new Item.Properties().stacksTo(1);
 
 
     // registry of modded items
@@ -208,28 +210,47 @@ public class ItemInit
 
 
     /* STONE AGE UPDATE ITEMS */
-    public static final RegistryObject<Item> SHARD_STONE = MOD_ITEMS.register("shard_stone", () -> new Item(PROPERTIES));
-    public static final RegistryObject<Item> SHARD_BONE = MOD_ITEMS.register("shard_bone", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> SHARD_STONE = MOD_ITEMS.register("shard_stone", ShardItem::new);
+    public static final RegistryObject<Item> SHARD_BONE = MOD_ITEMS.register("shard_bone", ShardItem::new);
+    public static final RegistryObject<Item> FLAKED_FLINT = MOD_ITEMS.register("flaked_flint", ShardItem::new);
     public static final RegistryObject<Item> LEATHER_TANNED = MOD_ITEMS.register("leather_tanned", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> PLANT_FIBER = MOD_ITEMS.register("plant_fiber", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> DRIED_PLANT_FIBER = MOD_ITEMS.register("dried_plant_fiber", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> MESH_PLANT_FIBER = MOD_ITEMS.register("mesh_plant_fiber", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> MESH_STRING = MOD_ITEMS.register("mesh_string", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> RAW_TREE_SAP = MOD_ITEMS.register("raw_tree_sap", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> TREE_SAP_GLUE = MOD_ITEMS.register("tree_sap_glue", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> CRUDE_TOOL_BINDING = MOD_ITEMS.register("crude_tool_binding", () -> new Item(PROPERTIES));
 
     public static final RegistryObject<Item> CRUDE_SIRE_STARTER = MOD_ITEMS.register("crude_fire_starter", () -> new FireStarter(48));
 
     public static final RegistryObject<Item> REFRACTORY_CEMENT = MOD_ITEMS.register("refractory_cement", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> REFRACTORY_BRICK = MOD_ITEMS.register("refractory_brick", () -> new Item(PROPERTIES));
-    public static final RegistryObject<Item> FLAKED_FLINT = MOD_ITEMS.register("flaked_flint", () -> new Item(PROPERTIES));
 
-//    public static final RegistryObject<Item> AXE_BONE;
-//    public static final RegistryObject<Item> HOE_BONE;
-//    public static final RegistryObject<Item> PICKAXE_BONE;
-//    public static final RegistryObject<Item> SHOVEL_BONE;
-//    public static final RegistryObject<Item> SWORD_BONE;
-//
-//    public static final RegistryObject<Item> AXE_FLINT;
-//    public static final RegistryObject<Item> HOE_FLINT;
-//    public static final RegistryObject<Item> PICKAXE_FLINT;
-//    public static final RegistryObject<Item> SHOVEL_FLINT;
-//    public static final RegistryObject<Item> SWORD_FLINT;
+    public static final RegistryObject<AxeItem> AXE_BONE = MOD_ITEMS.register("axe_bone", () -> new AxeItem(TierInit.BONE, 6.0F, -3.2F, PROPERTIES_TOOL));
+    public static final RegistryObject<HoeItem> HOE_BONE = MOD_ITEMS.register("hoe_bone", () -> new HoeItem(TierInit.BONE, 0, -3.0f, PROPERTIES_TOOL));
+    public static final RegistryObject<PickaxeItem> PICKAXE_BONE = MOD_ITEMS.register("pickaxe_bone", () -> new PickaxeItem(TierInit.BONE, 1, -2.8F, PROPERTIES_TOOL));
+    public static final RegistryObject<ShovelItem> SHOVEL_BONE = MOD_ITEMS.register("shovel_bone", () -> new ShovelItem(TierInit.BONE, 1.5F, -3.0F, PROPERTIES_TOOL));
+    public static final RegistryObject<SwordItem> SWORD_BONE = MOD_ITEMS.register("sword_bone", () -> new SwordItem(TierInit.BONE, 3, -2.4F, PROPERTIES_TOOL));
+
+    public static final RegistryObject<AxeItem> AXE_FLINT = MOD_ITEMS.register("axe_flint", () -> new AxeItem(TierInit.FLINT, 7.0F, -3.2F, PROPERTIES_TOOL));
+    public static final RegistryObject<HoeItem> HOE_FLINT = MOD_ITEMS.register("hoe_flint", () -> new HoeItem(TierInit.FLINT, -1, -2.0f, PROPERTIES_TOOL));
+    public static final RegistryObject<PickaxeItem> PICKAXE_FLINT = MOD_ITEMS.register("pickaxe_flint", () -> new PickaxeItem(TierInit.FLINT, 1, -2.8F, PROPERTIES_TOOL));
+    public static final RegistryObject<ShovelItem> SHOVEL_FLINT = MOD_ITEMS.register("shovel_flint", () -> new ShovelItem(TierInit.FLINT, 1.5F, -3.0F, PROPERTIES_TOOL));
+    public static final RegistryObject<SwordItem> SWORD_FLINT = MOD_ITEMS.register("sword_flint", () -> new SwordItem(TierInit.FLINT, 3, -2.4F, PROPERTIES_TOOL));
+
+    public static final RegistryObject<HoeItem> SCYTHE_WOODEN = MOD_ITEMS.register("scythe_wooden", () -> new ScytheItem(Tiers.WOOD, 0, -3.0f));
+    public static final RegistryObject<HoeItem> SCYTHE_STONE = MOD_ITEMS.register("scythe_stone", () -> new ScytheItem(Tiers.STONE, -1, -2.0f));
+    public static final RegistryObject<HoeItem> SCYTHE_BONE = MOD_ITEMS.register("scythe_bone", () -> new ScytheItem(TierInit.BONE, 0, -3.0f));
+    public static final RegistryObject<HoeItem> SCYTHE_FLINT = MOD_ITEMS.register("scythe_flint", () -> new ScytheItem(TierInit.FLINT, -1, -2.0f));
+
+    public static final RegistryObject<Item> CRUDE_PLANT_SIFTER = MOD_ITEMS.register("crude_plant_sifter", () -> new Sifter(Tiers.WOOD, 0, -3.0f, 32));
+    public static final RegistryObject<Item> CRUDE_STRING_SIFTER = MOD_ITEMS.register("crude_string_sifter", () -> new Sifter(Tiers.WOOD, 0, -3.0f,64));
+
+    public static final RegistryObject<Item> HAMMER_WOODEN = MOD_ITEMS.register("hammer_wooden", () -> new HammerTool(32));
+    public static final RegistryObject<Item> HAMMER_STONE = MOD_ITEMS.register("hammer_stone", () -> new HammerTool(64));
+    public static final RegistryObject<Item> HAMMER_BONE = MOD_ITEMS.register("hammer_bone", () -> new HammerTool(48));
+    public static final RegistryObject<Item> HAMMER_FLINT = MOD_ITEMS.register("hammer_flint", () -> new HammerTool(64));
+
+    public static final RegistryObject<Item> WOODEN_TREETAP = MOD_ITEMS.register("wooden_treetap", () -> new Treetap(64));
 }
