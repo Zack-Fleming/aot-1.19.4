@@ -1,23 +1,17 @@
 package com.lightning_flash.aot.core.init;
 
 import com.lightning_flash.aot.AOTMain;
-import com.lightning_flash.aot.core.objects.blocks.AlkaliResourceBlock;
-import com.lightning_flash.aot.core.objects.blocks.ToolTipBlock;
+import com.lightning_flash.aot.core.objects.blocks.*;
 import com.lightning_flash.aot.core.objects.blocks.debug.DebugBlock;
 import net.minecraft.ChatFormatting;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
@@ -445,6 +439,23 @@ public class BlockInit
     public static final RegistryObject<Block> LARGE_REFRACTORY_BRICK_WALL =
             register("large_refractory_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(LARGE_REFRACTORY_BRICKS.get())));
 
+
+
+    // STONE AGE BLOCKS
+    public static final RegistryObject<Block> WET_UNFIRED_CLAY_BUCKET =
+            register("wet_unfired_clay_bucket", () -> new PlaceableClayBucketBlock(BlockBehaviour.Properties.copy(Blocks.CLAY).randomTicks()));
+    public static final RegistryObject<Block> DRY_UNFIRED_CLAY_BUCKET =
+            register("dry_unfired_clay_bucket", () -> new ShappedBlock(BlockBehaviour.Properties.copy(Blocks.CLAY), 3.0f,
+                    Block.box(2.0, 0.0, 2.0, 14.0, 11.0, 14.0)));
+    public static final RegistryObject<Block> WET_UNFIRED_FLOWER_POT =
+            register("wet_unfired_flower_pot", () -> new PlaceableClayPotBlock(BlockBehaviour.Properties.copy(Blocks.CLAY).randomTicks()));
+    public static final RegistryObject<Block> DRY_UNFIRED_FLOWER_POT =
+            register("dry_unfired_flower_pot", () -> new ShappedBlock(BlockBehaviour.Properties.copy(Blocks.CLAY), 3.0f,
+                    Block.box(5.0, 0.0, 5.0, 11.0, 6.0, 11.0)));
+//    public static final RegistryObject<Block> WET_UNFIRED_CLAY_BRICK =
+//            register("wet_unfired_clay_brick", () -> new PlaceableClayBrickBlock(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+//    public static final RegistryObject<Block> DRY_UNFIRED_CLAY_BRICK =
+//            register("dry_unfired_clay_brick", () -> new PlaceableClayBrickBlock(BlockBehaviour.Properties.copy(Blocks.CLAY)));
 
 
 

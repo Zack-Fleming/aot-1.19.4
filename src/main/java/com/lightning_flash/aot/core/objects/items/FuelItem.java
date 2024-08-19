@@ -1,5 +1,6 @@
 package com.lightning_flash.aot.core.objects.items;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -31,6 +32,6 @@ public class FuelItem extends Item
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tip, TooltipFlag flag)
     {
         super.appendHoverText(stack, level, tip, flag);
-        tip.add(Component.literal("Smelts " + (burnTime / 200) + " items/fuel [" + ((burnTime / 200) * stack.getCount()) + " for this stack]" ));
+        tip.add(Component.literal(ChatFormatting.YELLOW + "Smelts " + (burnTime / 200) + " items/fuel [" + ((burnTime / 200) * stack.getCount()) + " for this stack]" ));
     }
 }

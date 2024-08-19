@@ -1,0 +1,7 @@
+{
+  "parent": "aot:block/bucket_block_template",
+  "textures": {
+    "texture": "aot:block/wet_unfired_clay_bucket",
+    "particle": "aot:block/wet_unfired_clay_bucket"
+  }
+}

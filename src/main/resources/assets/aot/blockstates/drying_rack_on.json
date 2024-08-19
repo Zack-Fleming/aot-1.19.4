@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "aot:drying_rack_on" },
-        "facing=south": { "model": "aot:drying_rack_on", "y": 180 },
-        "facing=west":  { "model": "aot:drying_rack_on", "y": 270 },
-        "facing=east":  { "model": "aot:drying_rack_on", "y": 90 }
-    }
-}

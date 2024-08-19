@@ -22,7 +22,8 @@ public class ItemLists
             ItemInit.SCYTHE_BONE,           ItemInit.SCYTHE_FLINT,      ItemInit.SCYTHE_STONE,
             ItemInit.CRUDE_PLANT_SIFTER,    ItemInit.CRUDE_STRING_SIFTER,   ItemInit.HAMMER_WOODEN,
             ItemInit.HAMMER_BONE,           ItemInit.HAMMER_FLINT,      ItemInit.HAMMER_STONE,
-            ItemInit.WOODEN_TREETAP
+            ItemInit.WOODEN_TREETAP,        ItemInit.LEATHER_WATER_JUG, BlockInit.WET_UNFIRED_CLAY_BUCKET,
+            BlockInit.DRY_UNFIRED_CLAY_BUCKET, BlockInit.WET_UNFIRED_FLOWER_POT, BlockInit.DRY_UNFIRED_FLOWER_POT
     ));
     public static List<RegistryObject<?>> SMALL_RAW_ORES = new ArrayList<>(Arrays.asList(
             ItemInit.SMALL_RAW_ALUMINUM,    ItemInit.SMALL_RAW_BERYLLIUM,   ItemInit.SMALL_RAW_BORON,
@@ -99,6 +100,7 @@ public class ItemLists
             ItemInit.PLANT_FIBER,       ItemInit.DRIED_PLANT_FIBER,     ItemInit.MESH_PLANT_FIBER,
             ItemInit.MESH_STRING,       ItemInit.REFRACTORY_CEMENT,     ItemInit.REFRACTORY_BRICK,
             ItemInit.SLAG,              ItemInit.FLAKED_FLINT,          ItemInit.RAW_TREE_SAP,
-            ItemInit.TREE_SAP_GLUE,     ItemInit.CRUDE_TOOL_BINDING
+            ItemInit.TREE_SAP_GLUE,     ItemInit.CRUDE_TOOL_BINDING,    ItemInit.BONE_SPLINTER,
+            ItemInit.BONE_NEEDLE_AND_THREAD,    ItemInit.ANCIENT_TEXTILES
     ));
 }

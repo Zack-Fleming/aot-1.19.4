@@ -29,13 +29,13 @@ description='''
 This mod adds the general progression of technology, throughout human history. Technology from the paleolithic (stone) age, through the many industrial revolutions, and all the way to the future.
 '''
 
-[[dependencies.examplemod]] # optional
+[[dependencies.aot]] # optional
     modId="forge" # the modid of the dependency (mandatory)
     mandatory=true # is the dependacy required to exist (mandatory)
     versionRange="[45,)" # The version range of the dependency (mandatory)
     ordering="NONE" # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     side="BOTH"# Side this dependency is applied on - BOTH, CLIENT or SERVER
-[[dependencies.examplemod]]
+[[dependencies.aot]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19.4,1.20)" # can be a range as such

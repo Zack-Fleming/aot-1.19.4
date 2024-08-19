@@ -1,22 +1,22 @@
-package com.lightning_flash.aot.core.objects.blocks;
+package com.lightning_flash.aot.core.objects.items;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import org.jetbrains.annotations.NotNull;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ToolTipBlock extends Block
+public class ToolTipItem extends Item
 {
     private final String tooltip, shiftTip, altTip, ctrlTip;
 
-    public ToolTipBlock(Properties properties, String tooltip) {
-        super(properties);
+    public ToolTipItem(Properties prop, String tooltip)
+    {
+        super(prop);
 
         this.tooltip = tooltip;
         this.shiftTip = null;
@@ -24,9 +24,9 @@ public class ToolTipBlock extends Block
         this.ctrlTip = null;
     }
 
-    public ToolTipBlock(Properties properties, String tooltip, String shiftTip)
+    public ToolTipItem(Properties prop, String tooltip, String shiftTip)
     {
-        super(properties);
+        super(prop);
 
         this.tooltip = tooltip;
         this.shiftTip = shiftTip;
@@ -34,9 +34,9 @@ public class ToolTipBlock extends Block
         this.ctrlTip = null;
     }
 
-    public ToolTipBlock(Properties properties, String tooltip, String shiftTip, String altTip)
+    public ToolTipItem(Properties prop, String tooltip, String shiftTip, String altTip)
     {
-        super(properties);
+        super(prop);
 
         this.tooltip = tooltip;
         this.shiftTip = shiftTip;
@@ -44,9 +44,9 @@ public class ToolTipBlock extends Block
         this.ctrlTip = null;
     }
 
-    public ToolTipBlock(Properties properties, String tooltip, String shiftTip, String altTip, String ctrlTip)
+    public ToolTipItem(Properties prop, String tooltip, String shiftTip, String altTip, String ctrlTip)
     {
-        super(properties);
+        super(prop);
 
         this.tooltip = tooltip;
         this.shiftTip = shiftTip;
@@ -55,7 +55,9 @@ public class ToolTipBlock extends Block
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack, @Nullable BlockGetter getter, List<Component> tip, TooltipFlag flag) {
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tip, TooltipFlag flag) {
+        super.appendHoverText(stack, level, tip, flag);
+
         // adding regular tooltip, if it exists
         if (!(this.tooltip == null)) tip.add(Component.literal(tooltip));
 

@@ -221,7 +221,11 @@ public class ItemInit
     public static final RegistryObject<Item> RAW_TREE_SAP = MOD_ITEMS.register("raw_tree_sap", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> TREE_SAP_GLUE = MOD_ITEMS.register("tree_sap_glue", () -> new Item(PROPERTIES));
     public static final RegistryObject<Item> CRUDE_TOOL_BINDING = MOD_ITEMS.register("crude_tool_binding", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> BONE_SPLINTER = MOD_ITEMS.register("bone_splinter", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> BONE_NEEDLE_AND_THREAD = MOD_ITEMS.register("bone_needle_and_thread", () -> new Item(PROPERTIES));
+    public static final RegistryObject<Item> ANCIENT_TEXTILES = MOD_ITEMS.register("ancient_textiles", () -> new Item(PROPERTIES));
 
+    public static final RegistryObject<Item> LEATHER_WATER_JUG = MOD_ITEMS.register("leather_water_jug", () -> new WaterJug(32, 2000));
     public static final RegistryObject<Item> CRUDE_SIRE_STARTER = MOD_ITEMS.register("crude_fire_starter", () -> new FireStarter(48));
 
     public static final RegistryObject<Item> REFRACTORY_CEMENT = MOD_ITEMS.register("refractory_cement", () -> new Item(PROPERTIES));

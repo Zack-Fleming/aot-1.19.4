@@ -407,6 +407,10 @@
 	"item.aot.raw_tree_sap": "Raw Tree Sap",
 	"item.aot.tree_sap_glue": "Tree Sap Glue",
 	"item.aot.crude_tool_binding": "Crude Tool Binding",
+	"item.aot.bone_splinter": "Splintered Bone",
+	"item.aot.bone_needle_and_thread": "Bone Needle and Thread",
+	"item.aot.ancient_textiles": "Ancient Textiles",
+	"item.aot.leather_water_jug": "Leather Water Jug",
 
 	"item.aot.axe_bone": "Bone Axe",
 	"item.aot.hoe_bone": "Bone Hoe",
@@ -457,5 +461,12 @@
 	"item.aot.sword_bronze": "Bronze Sword",
 
 	"item.aot.hammer_iron": "Iron Hammer",
-	"item.aot.hammer_bronze": "Bronze Hammer"
+	"item.aot.hammer_bronze": "Bronze Hammer",
+
+	"block.aot.wet_unfired_clay_bucket": "Wet Unfired Clay Bucket",
+	"block.aot.dry_unfired_clay_bucket" : "Dry Unfired Clay Bucket",
+	"block.aot.wet_unfired_flower_pot": "Wet Unfired Flower Pot",
+	"block.aot.dry_unfired_flower_pot": "Dry Unfired Flower Pot",
+	"block.aot.wet_unfired_clay_brick": "Wet Unfired Clay Brick",
+	"block.aot.dry_unfired_clay_brick": "Dry Unfired Clay Brick"
 }

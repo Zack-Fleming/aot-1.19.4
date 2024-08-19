@@ -1,0 +1,7 @@
+{
+  "parent": "aot:block/bucket_block_template",
+  "textures": {
+    "texture": "aot:block/texture",
+    "particle": "aot:block/texture"
+  }
+}

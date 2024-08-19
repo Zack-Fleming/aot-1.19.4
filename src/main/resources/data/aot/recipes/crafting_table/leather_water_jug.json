@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "leather_water_jug",
+  "show_notification": true,
+  "key": {
+    "L": {
+      "item": "aot:leather_tanned"
+    },
+    "G": {
+      "item": "aot:tree_sap_glue"
+    }
+  },
+  "pattern": [
+    " L ",
+    "LGL",
+    " L "
+  ],
+  "result": {
+    "item": "aot:leather_water_jug"
+  }
+}

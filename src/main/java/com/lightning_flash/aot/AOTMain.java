@@ -6,6 +6,7 @@ import com.lightning_flash.aot.core.util.TabLists;
 import com.mojang.logging.LogUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.SnowballItem;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -41,7 +42,7 @@ public class  AOTMain
 
         ModLootModifiers.register(modEventBus);                                     // register the loot modifiers
 
-        MinecraftForge.EVENT_BUS.register(this);                                // register the mod
+        MinecraftForge.EVENT_BUS.register(this);                                 // register the mod
     }
 
     // commands go here

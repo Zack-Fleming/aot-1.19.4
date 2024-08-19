@@ -17,6 +17,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -46,7 +47,9 @@ public class DebugStick extends Item
             BlockPos oPos = pos.relative(direction);
             Block oBlock = level.getBlockState(oPos).getBlock();
 
-            assert player != null;
+            if (player == null) return InteractionResult.FAIL; // if the player is null, return fail
+
+            // get the clicked block information
             player.displayClientMessage(Component.literal(
                     "\nClicked Block:" +
                             "\n -name: " + cBlock +
@@ -58,8 +61,21 @@ public class DebugStick extends Item
                             "\n   -place: " + cBlock.getSoundType(cBlock.defaultBlockState(),level,pos,player).getPlaceSound().getLocation().getPath() +
                             "\n   -step: " + cBlock.getSoundType(cBlock.defaultBlockState(),level,pos,player).getStepSound().getLocation().getPath() +
                             "\n   -fall: " + cBlock.getSoundType(cBlock.defaultBlockState(),level,pos,player).getFallSound().getLocation().getPath() +
-                            "\n   -hit: " + cBlock.getSoundType(cBlock.defaultBlockState(),level,pos,player).getHitSound().getLocation().getPath() +
-                            "\n\nOffset Block:" +
+                            "\n   -hit: " + cBlock.getSoundType(cBlock.defaultBlockState(),level,pos,player).getHitSound().getLocation().getPath()
+            ), false);
+
+
+            // get the clicked block state information
+            cBlock.getStateDefinition().getProperties().forEach((property) -> {
+                player.displayClientMessage(Component.literal(
+                        "\n -" + property.getName() + ": " + cBlock.defaultBlockState().getValue(property)
+                ), false);
+            });
+
+
+            // get the offset block information
+            player.displayClientMessage(Component.literal(
+                    "\n\nOffset Block:" +
                             "\n -name: " + oBlock +
                             "\n -pos : " + oPos.getX() + ", "  + oPos.getY() + ", " + oPos.getX()
             ), false);

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "aot:block_slag"
+    "aot:block_slag",
+    "aot:wet_unfired_clay_bucket",
+    "aot:dry_unfired_clay_bucket",
+    "aot:wet_unfired_flower_pot",
+    "aot:dry_unfired_flower_pot"
   ]
 }

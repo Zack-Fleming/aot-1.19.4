@@ -7,6 +7,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.FlintAndSteelItem;
@@ -71,6 +72,13 @@ public class BlockEvents
                     level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
                     stack.setCount(stack.getCount() - 1);
                     player.drop(new ItemStack(ItemInit.FLAKED_FLINT.get().asItem(), count), true);
+                }
+                if (held_item == ItemInit.SHARD_BONE.get())
+                {
+                    int count = AOTMain.RANDOM.nextInt(0, 2);
+                    level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
+                    stack.setCount(stack.getCount() - 1);
+                    player.drop(new ItemStack(ItemInit.BONE_SPLINTER.get().asItem(), count), true);
                 }
             }
 

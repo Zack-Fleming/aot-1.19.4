@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bone_needle_and_thread",
+  "show_notification": true,
+  "key": {
+    "T": {
+      "item": "minecraft:string"
+    },
+    "N": {
+      "item": "aot:bone_splinter"
+    }
+  },
+  "pattern": [
+    "T",
+    "N"
+  ],
+  "result": {
+    "item": "aot:bone_needle_and_thread"
+  }
+}

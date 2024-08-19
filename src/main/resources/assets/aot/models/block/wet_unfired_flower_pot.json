@@ -1,0 +1,7 @@
+{
+  "parent": "aot:block/flower_pot_template",
+  "textures": {
+    "flowerpot": "aot:block/wet_unfired_flower_pot",
+    "particle": "aot:block/wet_unfired_flower_pot"
+  }
+}
