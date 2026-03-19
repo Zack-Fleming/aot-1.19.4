@@ -1,0 +1,7 @@
+{
+  "parent": "aot:block/placeable_brick_template",
+  "textures": {
+    "texture": "aot:block/wet_unfired_clay_brick",
+    "particle": "aot:block/wet_unfired_clay_brick"
+  }
+}

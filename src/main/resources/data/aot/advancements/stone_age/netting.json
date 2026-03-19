@@ -1,0 +1,50 @@
+{
+  "parent": "aot:stone_age/root",
+  "criteria": {
+    "plant_mesh": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:mesh_plant_fiber"
+            ]
+          }
+        ]
+      }
+    },
+    "string_mesh": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:mesh_string"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:mesh_plant_fiber"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.netting.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.netting.description"
+    }
+  },
+  "requirements": [
+    [
+      "plant_mesh",
+      "string_mesh"
+    ]
+  ]
+}

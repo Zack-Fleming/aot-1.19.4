@@ -1,0 +1,77 @@
+{
+  "parent": "aot:stone_age/root",
+  "criteria": {
+    "scythe_wooden": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:scythe_wooden"
+            ]
+          }
+        ]
+      }
+    },
+    "scythe_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:scythe_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "scythe_bone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:scythe_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "scythe_flint": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:scythe_flint"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:scythe_wooden",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.reaper.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.reaper.description"
+    }
+  },
+  "requirements": [
+    [
+      "scythe_wooden",
+      "scythe_stone",
+      "scythe_flint",
+      "scythe_bone"
+    ]
+  ]
+}

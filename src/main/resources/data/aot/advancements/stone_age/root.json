@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "cobblestone": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "aot:textures/gui/advancements/backgrounds/stone_age.png",
+    "description": {
+      "translate": "advancements.aot.stone_age.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.aot.stone_age.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "cobblestone"
+    ]
+  ]
+}

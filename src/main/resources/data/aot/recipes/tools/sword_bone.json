@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "i",
+    "b"
+  ],
+  "key": {
+    "i": {
+      "item": "aot:shard_bone"
+    },
+    "b": {
+      "item": "aot:crude_tool_binding"
+    }
+  },
+  "result": {
+    "item": "aot:sword_bone"
+  }
+}

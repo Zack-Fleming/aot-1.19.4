@@ -10,7 +10,7 @@ public class TierInit
 {
     public static final Tier BONE =
             new ForgeTier(
-                    0,
+                    1,
                     88,
                     2.0f,
                     1.0f,

@@ -1,0 +1,7 @@
+{
+  "parent": "aot:block/placeable_brick_template",
+  "textures": {
+    "texture": "aot:block/refractory_brick",
+    "particle": "aot:block/refractory_brick"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "aot:stone_age/flint_knapping",
+  "criteria": {
+    "fire_starter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:crude_fire_starter"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:crude_fire_starter"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.pyromaniac.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.pyromaniac.description"
+    }
+  },
+  "requirements": [
+    [
+      "fire_starter"
+    ]
+  ]
+}

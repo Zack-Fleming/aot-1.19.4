@@ -1,6 +1,7 @@
 package com.lightning_flash.aot.core.events;
 
 import com.lightning_flash.aot.AOTMain;
+import com.lightning_flash.aot.core.init.BlockInit;
 import com.lightning_flash.aot.core.init.ItemInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -18,6 +19,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.levelgen.SurfaceSystem;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -34,15 +36,15 @@ public class BlockEvents
 {
     private static final List<Block> HOT_BLOCKS = List.of(Blocks.LAVA, Blocks.LAVA_CAULDRON, Blocks.MAGMA_BLOCK, Blocks.FIRE);
     private static final List<Item> WOOLEN_BLOCKS = List.of(
-            Blocks.ORANGE_WOOL.asItem(), Blocks.MAGENTA_WOOL.asItem(), Blocks.LIGHT_BLUE_WOOL.asItem(), Blocks.YELLOW_WOOL.asItem(),
-            Blocks.LIME_WOOL.asItem(), Blocks.PINK_WOOL.asItem(), Blocks.GRAY_WOOL.asItem(), Blocks.LIGHT_GRAY_WOOL.asItem(),
-            Blocks.CYAN_WOOL.asItem(), Blocks.PURPLE_WOOL.asItem(), Blocks.BLUE_WOOL.asItem(), Blocks.BROWN_WOOL.asItem(),
-            Blocks.GREEN_WOOL.asItem(), Blocks.RED_WOOL.asItem(), Blocks.BLACK_WOOL.asItem(),
+            Blocks.ORANGE_WOOL.asItem(),    Blocks.MAGENTA_WOOL.asItem(),   Blocks.LIGHT_BLUE_WOOL.asItem(),    Blocks.YELLOW_WOOL.asItem(),
+            Blocks.LIME_WOOL.asItem(),      Blocks.PINK_WOOL.asItem(),      Blocks.GRAY_WOOL.asItem(),          Blocks.LIGHT_GRAY_WOOL.asItem(),
+            Blocks.CYAN_WOOL.asItem(),      Blocks.PURPLE_WOOL.asItem(),    Blocks.BLUE_WOOL.asItem(),          Blocks.BROWN_WOOL.asItem(),
+            Blocks.GREEN_WOOL.asItem(),     Blocks.RED_WOOL.asItem(),       Blocks.BLACK_WOOL.asItem(),
 
-            Blocks.ORANGE_CARPET.asItem(), Blocks.MAGENTA_CARPET.asItem(), Blocks.LIGHT_BLUE_CARPET.asItem(), Blocks.YELLOW_CARPET.asItem(),
-            Blocks.LIME_CARPET.asItem(), Blocks.PINK_CARPET.asItem(), Blocks.GRAY_CARPET.asItem(), Blocks.LIGHT_GRAY_CARPET.asItem(),
-            Blocks.CYAN_CARPET.asItem(), Blocks.PURPLE_CARPET.asItem(), Blocks.BLUE_CARPET.asItem(), Blocks.BROWN_CARPET.asItem(),
-            Blocks.GREEN_CARPET.asItem(), Blocks.RED_CARPET.asItem(), Blocks.BLACK_CARPET.asItem());
+            Blocks.ORANGE_CARPET.asItem(),  Blocks.MAGENTA_CARPET.asItem(), Blocks.LIGHT_BLUE_CARPET.asItem(),  Blocks.YELLOW_CARPET.asItem(),
+            Blocks.LIME_CARPET.asItem(),    Blocks.PINK_CARPET.asItem(),    Blocks.GRAY_CARPET.asItem(),        Blocks.LIGHT_GRAY_CARPET.asItem(),
+            Blocks.CYAN_CARPET.asItem(),    Blocks.PURPLE_CARPET.asItem(),  Blocks.BLUE_CARPET.asItem(),        Blocks.BROWN_CARPET.asItem(),
+            Blocks.GREEN_CARPET.asItem(),   Blocks.RED_CARPET.asItem(),     Blocks.BLACK_CARPET.asItem());
 
     @SubscribeEvent
     public static void rightClickBlock(PlayerInteractEvent.RightClickBlock event)
@@ -50,7 +52,9 @@ public class BlockEvents
         Player player       = event.getEntity();
         Level level         = event.getLevel();
         BlockPos pos        = event.getPos();
+        BlockPos cPos       = event.getPos().relative(event.getFace());
         BlockState state    = level.getBlockState(pos);
+        BlockState cState   = level.getBlockState(cPos);
         ItemStack stack     = player.getItemInHand(event.getHand());
         Item held_item      = stack.getItem();
 
@@ -63,25 +67,24 @@ public class BlockEvents
                 {
                     int count = AOTMain.RANDOM.nextInt(0, 3);
                     level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
-                    stack.setCount(stack.getCount() - 1);
+                    if(!player.isCreative()) stack.setCount(stack.getCount() - 1);
                     player.drop(new ItemStack(ItemInit.SHARD_BONE.get().asItem(), count), true);
                 }
                 if (held_item == Items.FLINT)
                 {
                     int count = AOTMain.RANDOM.nextInt(0, 3);
                     level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
-                    stack.setCount(stack.getCount() - 1);
+                    if(!player.isCreative()) stack.setCount(stack.getCount() - 1);
                     player.drop(new ItemStack(ItemInit.FLAKED_FLINT.get().asItem(), count), true);
                 }
                 if (held_item == ItemInit.SHARD_BONE.get())
                 {
                     int count = AOTMain.RANDOM.nextInt(0, 2);
                     level.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS,1.0f , (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
-                    stack.setCount(stack.getCount() - 1);
+                    if(!player.isCreative()) stack.setCount(stack.getCount() - 1);
                     player.drop(new ItemStack(ItemInit.BONE_SPLINTER.get().asItem(), count), true);
                 }
             }
-
             // wool undye event
             else if (state.is(Blocks.WATER_CAULDRON))
             {
@@ -102,9 +105,18 @@ public class BlockEvents
                     level.playSound((Player) null, pos, SoundEvents.PLAYER_SPLASH, SoundSource.BLOCKS, 1.0F, (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
 
                     player.drop(((held_item.getName(stack).toString().contains("carpet")) ? new ItemStack(Items.WHITE_CARPET, 1) : new ItemStack(Items.WHITE_WOOL, 1)), true);
-                    stack.setCount(stack.getCount() - 1);
+                    if(!player.isCreative()) stack.setCount(stack.getCount() - 1);
+                }
+            }
+            // place a placeable brick when a minecraft brick is held
+            else if (held_item == Items.BRICK)
+            {
+                if (!state.is(BlockInit.BRICK.get()) && !cState.is(BlockInit.BRICK.get()))
+                {
+                    level.playSound((Player) null, pos, SoundEvents.STONE_PLACE, SoundSource.BLOCKS, 1.0F, (1.0F + level.random.nextFloat() * 0.2F) * 0.7F);
+                    level.setBlockAndUpdate(cPos, BlockInit.BRICK.get().defaultBlockState());
 
-                    //level.setBlock(pos, Blocks.DIAMOND_BLOCK.defaultBlockState(), 11);
+                    if(!player.isCreative()) stack.setCount(stack.getCount() - 1);
                 }
             }
         }

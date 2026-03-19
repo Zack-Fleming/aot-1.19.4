@@ -1,0 +1,77 @@
+{
+  "parent": "aot:stone_age/root",
+  "criteria": {
+    "wooden_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hammer_wooden"
+            ]
+          }
+        ]
+      }
+    },
+    "stone_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hammer_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hammer_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hammer_flint"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:hammer_wooden",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.hammering_time.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.hammering_time.description"
+    }
+  },
+  "requirements": [
+    [
+      "wooden_hammer",
+      "stone_hammer",
+      "bone_hammer",
+      "flint_hammer"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "aot:stone_age/root",
+  "criteria": {
+    "campfire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:campfire"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "minecraft:campfire"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.under_the_stars.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.under_the_stars.description"
+    }
+  },
+  "requirements": [
+    [
+      "campfire"
+    ]
+  ]
+}

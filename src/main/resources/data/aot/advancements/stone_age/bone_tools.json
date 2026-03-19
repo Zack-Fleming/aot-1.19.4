@@ -1,0 +1,115 @@
+{
+  "parent": "aot:stone_age/bone_breaking",
+  "criteria": {
+    "bone_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:axe_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hoe_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:pickaxe_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:shovel_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:sword_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:scythe_bone"
+            ]
+          }
+        ]
+      }
+    },
+    "bone_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hammer_bone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:pickaxe_bone"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.bone_tools.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.bone_tools.description"
+    }
+  },
+  "requirements": [
+    [
+      "bone_axe",
+      "bone_hoe",
+      "bone_pickaxe",
+      "bone_shovel",
+      "bone_sword",
+      "bone_scythe",
+      "bone_hammer"
+    ]
+  ]
+}

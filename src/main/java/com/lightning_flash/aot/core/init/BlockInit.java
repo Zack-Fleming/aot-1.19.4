@@ -19,6 +19,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -452,11 +453,25 @@ public class BlockInit
     public static final RegistryObject<Block> DRY_UNFIRED_FLOWER_POT =
             register("dry_unfired_flower_pot", () -> new ShappedBlock(BlockBehaviour.Properties.copy(Blocks.CLAY), 3.0f,
                     Block.box(5.0, 0.0, 5.0, 11.0, 6.0, 11.0)));
-//    public static final RegistryObject<Block> WET_UNFIRED_CLAY_BRICK =
-//            register("wet_unfired_clay_brick", () -> new PlaceableClayBrickBlock(BlockBehaviour.Properties.copy(Blocks.CLAY)));
-//    public static final RegistryObject<Block> DRY_UNFIRED_CLAY_BRICK =
-//            register("dry_unfired_clay_brick", () -> new PlaceableClayBrickBlock(BlockBehaviour.Properties.copy(Blocks.CLAY)));
-
+    public static final RegistryObject<Block> DRY_UNFIRED_CLAY_BRICK =
+            register("dry_unfired_clay_brick", () -> new ShappedBlock(BlockBehaviour.Properties.copy(Blocks.CLAY), 3.0f,
+                    Block.box(4.0, 0.0, 6.0, 12.0, 2.0, 10.0)));
+    public static final RegistryObject<Block> WET_UNFIRED_CLAY_BRICK =
+            register("wet_unfired_clay_brick", () -> new PlaceableClayBrickBlock(BlockBehaviour.Properties.copy(Blocks.CLAY).randomTicks(),
+                    DRY_UNFIRED_CLAY_BRICK.get().defaultBlockState()));
+    // fired brick goes here
+    public static final RegistryObject<Block> DRY_UNFIRED_REFRACTORY_BRICK =
+            register("dry_unfired_refractory_brick", () -> new ShappedBlock(BlockBehaviour.Properties.copy(Blocks.CLAY), 3.0f,
+                    Block.box(4.0, 0.0, 6.0, 12.0, 2.0, 10.0)));
+    public static final RegistryObject<Block> WET_UNFIRED_REFRACTORY_BRICK =
+            register("wet_unfired_refractory_brick", () -> new PlaceableClayBrickBlock(BlockBehaviour.Properties.copy(Blocks.CLAY).randomTicks(),
+                    DRY_UNFIRED_REFRACTORY_BRICK.get().defaultBlockState()));
+    public static final RegistryObject<Block> REFRACTORY_BRICK =
+            register("refractory_brick", () -> new ShappedBlock(BlockBehaviour.Properties.copy(BlockInit.REFRACTORY_BRICKS.get()), 3.0f,
+                    Block.box(4.0, 0.0, 6.0, 12.0, 2.0, 10.0)));
+    public static final RegistryObject<Block> BRICK =
+            MOD_BLOCKS.register("brick", () -> new ShappedBlock(BlockBehaviour.Properties.copy(BlockInit.REFRACTORY_BRICKS.get()), 3.0f,
+                    Block.box(4.0, 0.0, 6.0, 12.0, 2.0, 10.0)));
 
 
     

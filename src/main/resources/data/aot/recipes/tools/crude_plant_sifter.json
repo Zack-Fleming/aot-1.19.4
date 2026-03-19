@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+    "pmp",
+    " p "
+  ],
+  "key": {
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "m": {
+      "item": "aot:mesh_plant_fiber"
+    }
+  },
+  "result": {
+    "item": "aot:crude_plant_sifter"
+  }
+}

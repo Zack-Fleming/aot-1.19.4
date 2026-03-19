@@ -3,14 +3,14 @@
   "pattern": [
     "i",
     "i",
-    "s"
+    "b"
   ],
   "key": {
     "i": {
       "item": "aot:shard_stone"
     },
-    "s": {
-      "tag": "forge:rods/wooden"
+    "b": {
+      "item": "aot:crude_tool_binding"
     }
   },
   "result": {

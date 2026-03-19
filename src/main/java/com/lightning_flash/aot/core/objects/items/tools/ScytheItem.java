@@ -67,9 +67,9 @@ public class ScytheItem extends HoeItem
                                 {
                                     dropLoot(level, cropPos, level.getBlockState(cropPos), block);
 
-                                    level.setBlockAndUpdate(cropPos, crop.getStateForAge(0));   // the broken bit
+                                    level.setBlockAndUpdate(cropPos, crop.getStateForAge(0));   // the broken bitmea
                                 } else
-                                    level.destroyBlock(cropPos, true);                                       // the broken bit
+                                    level.destroyBlock(cropPos, true);                          // the broken bit
                             }
                         }
                     }

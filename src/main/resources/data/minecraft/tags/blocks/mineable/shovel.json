@@ -5,6 +5,10 @@
     "aot:wet_unfired_clay_bucket",
     "aot:dry_unfired_clay_bucket",
     "aot:wet_unfired_flower_pot",
-    "aot:dry_unfired_flower_pot"
+    "aot:dry_unfired_flower_pot",
+    "aot:wet_unfired_clay_brick",
+    "aot:dry_unfired_clay_brick",
+    "aot:wet_unfired_refractory_brick",
+    "aot:dry_unfired_refractory_brick"
   ]
 }

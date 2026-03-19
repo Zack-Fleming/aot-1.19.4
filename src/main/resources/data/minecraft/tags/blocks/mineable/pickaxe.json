@@ -190,6 +190,9 @@
     "aot:large_refractory_bricks",
     "aot:large_refractory_brick_stairs",
     "aot:large_refractory_brick_slab",
-    "aot:large_refractory_brick_wall"
+    "aot:large_refractory_brick_wall",
+
+    "aot:refractory_brick",
+    "aot:brick"
   ]
 }

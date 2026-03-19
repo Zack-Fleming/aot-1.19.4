@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "i",
+    "b"
+  ],
+  "key": {
+    "i": {
+      "tag": "minecraft:planks"
+    },
+    "b": {
+      "item": "aot:crude_tool_binding"
+    }
+  },
+  "result": {
+    "item": "minecraft:wooden_sword"
+  }
+}

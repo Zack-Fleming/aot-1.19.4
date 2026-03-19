@@ -1,0 +1,37 @@
+{
+  "parent": "aot:stone_age/resin_collector",
+  "criteria": {
+    "resin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:raw_tree_sap"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:raw_tree_sap"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.resin.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.resin.description"
+    }
+  },
+  "requirements": [
+    [
+      "resin"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "aot:stone_age/splintery",
+  "criteria": {
+    "flaked_flint": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:flaked_flint"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:flaked_flint"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.flint_knapping.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.flint_knapping.description"
+    }
+  },
+  "requirements": [
+    [
+      "flaked_flint"
+    ]
+  ]
+}

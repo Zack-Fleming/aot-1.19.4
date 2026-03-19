@@ -3,13 +3,17 @@
 	"creativemodetab.aot_resource_tab": "AOT Resources",
 	"creativemodetab.aot_debug_tab": "AOT Debugging",
 	"creativemodetab.aot_building_tab": "AOT Building Blocks",
-	
+
+
+
 	
 	"item.aot.debug_stick": "§4Stick of Debugging§4§r",
 	"item.aot.item_wand": "§4Wand of Iteming§4§r",
 	"item.aot.block_wand": "§4Wand of Blockening§4§r",
 	"item.aot.particle_wand": "§4Wand of Glittering§4§r",
 	"block.aot.debug_block": "§4Block of Debugging§4§r",
+
+
 
 
 	"block.aot.limestone": "Limestone",
@@ -69,7 +73,6 @@
 	"block.aot.chiseled_marble_wall": "Chiseled Marble Wall",
 
 
-
 	"block.aot.poor_ore_aluminum": "Poor Bauxite Ore",
 	"block.aot.poor_ore_beryllium": "Poor Bertrandite Ore",
 	"block.aot.poor_ore_boron": "Poor Rasorite Ore",
@@ -109,7 +112,6 @@
 	"block.aot.deepslate_poor_ore_uranium": "Deepslate Poor Carnotite Ore",
 	"block.aot.deepslate_poor_ore_zinc": "Deepslate Poor Sphalerite Ore",
 	"block.aot.deepslate_poor_ore_zirconium": "Deepslate Poor Baddeleyite Ore",
-
 
 	"block.aot.ore_aluminum": "Bauxite Ore",
 	"block.aot.ore_beryllium": "Bertrandite Ore",
@@ -379,13 +381,13 @@
 	"item.aot.small_dust_zinc": "Small Zinc Dust",
 	"item.aot.small_dust_zirconium": "Small Zirconium Dust",
 
-	"item.aot.refractory_cement": "Refractory Cement",
-	"item.aot.refractory_brick": "Refractory Brick",
 
+	"item.aot.refractory_cement": "Refractory Cement",
 	"block.aot.refractory_bricks": "Refractory Bricks",
 	"block.aot.refractory_brick_slab": "Refractory Brick Slab",
 	"block.aot.refractory_brick_stairs": "Refractory Brick Stairs",
 	"block.aot.refractory_brick_wall": "Refractory Brick Wall",
+
 
 	"block.aot.large_refractory_bricks": "Large Refractory Bricks",
 	"block.aot.large_refractory_brick_slab": "Large Refractory Brick Slab",
@@ -394,6 +396,8 @@
 
 	"item.aot.slag": "Slag",
 	"block.aot.block_slag": "Block of slag",
+
+
 
 
 	"item.aot.shard_bone": "Bone Shard",
@@ -448,6 +452,8 @@
 	"enchantment.aot.ore_excavator": "Ore Excavator",
 
 
+
+
 	"item.aot.axe_copper": "Copper Axe",
 	"item.aot.hoe_copper": "Copper Hoe",
 	"item.aot.pickaxe_copper": "Copper Pickaxe",
@@ -468,5 +474,47 @@
 	"block.aot.wet_unfired_flower_pot": "Wet Unfired Flower Pot",
 	"block.aot.dry_unfired_flower_pot": "Dry Unfired Flower Pot",
 	"block.aot.wet_unfired_clay_brick": "Wet Unfired Clay Brick",
-	"block.aot.dry_unfired_clay_brick": "Dry Unfired Clay Brick"
+	"block.aot.dry_unfired_clay_brick": "Dry Unfired Clay Brick",
+	"block.aot.wet_unfired_refractory_brick": "Wet Unfired Refractory Brick",
+	"block.aot.dry_unfired_refractory_brick": "Dry Unfired Refractory Brick",
+	"block.aot.refractory_brick": "Refractory Brick",
+
+	"advancements.aot.stone_age.root.title": "The Start of an Era",
+	"advancements.aot.stone_age.root.description": "Start of the Stone Age",
+	"advancements.aot.stone_age.splintry.title": "Ouch! Splinters!",
+	"advancements.aot.stone_age.splintry.description": "Craft/obtain some wooden tool(s)",
+	"advancements.aot.stone_age.hammering_time.title": "It's Hammering Time",
+	"advancements.aot.stone_age.hammering_time.description": "Craft/obtain a hammer (wooden, stone, bone, or flint)",
+	"advancements.aot.stone_age.reaper.title": "I'm The Reaper",
+	"advancements.aot.stone_age.reaper.description": "Craft/obtain a scythe (wooden, stone, bone, or flint)",
+	"advancements.aot.stone_age.under_the_stars.title": "Under The Stars",
+	"advancements.aot.stone_age.under_the_stars.description": "Craft/obtain a campfire",
+	"advancements.aot.stone_age.smoked_flavor.title": "Mmmm, smoked flavor",
+	"advancements.aot.stone_age.smoked_flavor.description": "Cook food with a campfire",
+	"advancements.aot.stone_age.netting.title": "Netting",
+	"advancements.aot.stone_age.netting.description": "Craft/obtain either a plant or string mesh",
+	"advancements.aot.stone_age.sifting.title": "Let's get Sifting",
+	"advancements.aot.stone_age.sifting.description": "Craft/obtain either a crude plant or crude string sifter",
+	"advancements.aot.stone_age.resin_collector.title": "Resin collector",
+	"advancements.aot.stone_age.resin_collector.description": "Craft a wooden treetap",
+	"advancements.aot.stone_age.resin.title": "Raw Resin",
+	"advancements.aot.stone_age.resin.description": "Collect some raw tree resin",
+	"advancements.aot.stone_age.glued_up.title": "Glued Up",
+	"advancements.aot.stone_age.glued_up.description": "Craft/obtain some tree sap glue",
+	"advancements.aot.stone_age.flint_knapping.title": "Flint Knapping",
+	"advancements.aot.stone_age.flint_knapping.description": "Obtain some flaked flint",
+	"advancements.aot.stone_age.pyromaniac.title": "Pyromaniac",
+	"advancements.aot.stone_age.pyromaniac.description": "Craft/obtain a crude fire starter",
+	"advancements.aot.stone_age.flint_tools.title": "Stone Tools? Kind of...",
+	"advancements.aot.stone_age.flint_tools.description": "Craft/obtain a flint tool",
+	"advancements.aot.stone_age.no_cobble.title": "Where's the cobble?",
+	"advancements.aot.stone_age.no_cobble.description": "Figure out that stone does not drop cobblestone",
+	"advancements.aot.stone_age.yes_cobble.title": "There's the cobble!",
+	"advancements.aot.stone_age.yes_cobble.description": "Craft/obtain some cobblestone",
+	"advancements.aot.stone_age.stone_tools.title": "Stone Tools, Finally!",
+	"advancements.aot.stone_age.stone_tools.description": "Craft/obtain some stone tools",
+	"advancements.aot.stone_age.bone_breaking.title": "Bone Crushing",
+	"advancements.aot.stone_age.bone_breaking.description": "Break some bones into some shards",
+	"advancements.aot.stone_age.bone_tools.title": "Boney Tools",
+	"advancements.aot.stone_age.bone_tools.description": "craft/obtain some bone tools"
 }

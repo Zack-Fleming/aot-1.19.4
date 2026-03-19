@@ -1,0 +1,50 @@
+{
+  "parent": "aot:stone_age/netting",
+  "criteria": {
+    "plant_sifter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:crude_plant_sifter"
+            ]
+          }
+        ]
+      }
+    },
+    "string_sifter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:crude_string_sifter"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:crude_plant_sifter"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.sifting.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.sifting.description"
+    }
+  },
+  "requirements": [
+    [
+      "plant_sifter",
+      "string_sifter"
+    ]
+  ]
+}

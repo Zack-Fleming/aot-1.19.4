@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "b",
+    "s"
+  ],
+  "key": {
+    "i": {
+      "item": "aot:shard_bone"
+    },
+    "b": {
+      "item": "aot:crude_tool_binding"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "aot:shovel_bone"
+  }
+}

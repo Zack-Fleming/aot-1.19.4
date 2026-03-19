@@ -1,0 +1,115 @@
+{
+  "parent": "aot:stone_age/flint_knapping",
+  "criteria": {
+    "flint_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:axe_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hoe_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:pickaxe_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:shovel_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:sword_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:scythe_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "flint_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:hammer_flint"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:pickaxe_flint"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.flint_tools.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.flint_tools.description"
+    }
+  },
+  "requirements": [
+    [
+      "flint_axe",
+      "flint_hoe",
+      "flint_pickaxe",
+      "flint_shovel",
+      "flint_sword",
+      "flint_scythe",
+      "flint_hammer"
+    ]
+  ]
+}

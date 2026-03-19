@@ -98,9 +98,11 @@ public class ItemLists
     public static List<RegistryObject<?>> STONE_AGE_RESOURCES = new ArrayList<>(Arrays.asList(
             ItemInit.SHARD_STONE,       ItemInit.SHARD_BONE,            ItemInit.LEATHER_TANNED,
             ItemInit.PLANT_FIBER,       ItemInit.DRIED_PLANT_FIBER,     ItemInit.MESH_PLANT_FIBER,
-            ItemInit.MESH_STRING,       ItemInit.REFRACTORY_CEMENT,     ItemInit.REFRACTORY_BRICK,
+            ItemInit.MESH_STRING,       ItemInit.REFRACTORY_CEMENT,
             ItemInit.SLAG,              ItemInit.FLAKED_FLINT,          ItemInit.RAW_TREE_SAP,
             ItemInit.TREE_SAP_GLUE,     ItemInit.CRUDE_TOOL_BINDING,    ItemInit.BONE_SPLINTER,
-            ItemInit.BONE_NEEDLE_AND_THREAD,    ItemInit.ANCIENT_TEXTILES
+            ItemInit.BONE_NEEDLE_AND_THREAD,    ItemInit.ANCIENT_TEXTILES,      BlockInit.WET_UNFIRED_CLAY_BRICK,
+            BlockInit.DRY_UNFIRED_CLAY_BRICK,   BlockInit.WET_UNFIRED_REFRACTORY_BRICK,     BlockInit.DRY_UNFIRED_REFRACTORY_BRICK,
+            BlockInit.REFRACTORY_BRICK
     ));
 }

@@ -1,0 +1,37 @@
+{
+  "parent": "aot:stone_age/splintery",
+  "criteria": {
+    "shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:shard_bone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "aot:shard_bone"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.bone_breaking.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.bone_breaking.description"
+    }
+  },
+  "requirements": [
+    [
+      "shard"
+    ]
+  ]
+}

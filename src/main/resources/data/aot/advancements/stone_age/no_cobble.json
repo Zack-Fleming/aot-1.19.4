@@ -1,0 +1,37 @@
+{
+  "parent": "aot:stone_age/splintery",
+  "criteria": {
+    "stone_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aot:shard_stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": true,
+    "icon": {
+      "item": "minecraft:cobblestone"
+    },
+    "title": {
+      "translate": "advancements.aot.stone_age.no_cobble.title"
+    },
+    "description": {
+      "translate": "advancements.aot.stone_age.no_cobble.description"
+    }
+  },
+  "requirements": [
+    [
+      "stone_shard"
+    ]
+  ]
+}

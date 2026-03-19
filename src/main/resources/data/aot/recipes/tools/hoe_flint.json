@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ii",
+    " b",
+    " s"
+  ],
+  "key": {
+    "i": {
+      "item": "aot:flaked_flint"
+    },
+    "b": {
+      "item": "aot:crude_tool_binding"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "aot:hoe_flint"
+  }
+}

@@ -229,7 +229,6 @@ public class ItemInit
     public static final RegistryObject<Item> CRUDE_SIRE_STARTER = MOD_ITEMS.register("crude_fire_starter", () -> new FireStarter(48));
 
     public static final RegistryObject<Item> REFRACTORY_CEMENT = MOD_ITEMS.register("refractory_cement", () -> new Item(PROPERTIES));
-    public static final RegistryObject<Item> REFRACTORY_BRICK = MOD_ITEMS.register("refractory_brick", () -> new Item(PROPERTIES));
 
     public static final RegistryObject<AxeItem> AXE_BONE = MOD_ITEMS.register("axe_bone", () -> new AxeItem(TierInit.BONE, 6.0F, -3.2F, PROPERTIES_TOOL));
     public static final RegistryObject<HoeItem> HOE_BONE = MOD_ITEMS.register("hoe_bone", () -> new HoeItem(TierInit.BONE, 0, -3.0f, PROPERTIES_TOOL));

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "plant_mesh",
+  "show_notification": true,
+  "key": {
+    "P": {
+      "item": "aot:plant_fiber"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "item": "aot:mesh_plant_fiber"
+  }
+}
